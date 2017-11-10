@@ -44,19 +44,6 @@ input.txt {line-height:1;}
 select {height:30px;border:1px solid #dbdbdb;}
 textarea, input.txt {padding:7px 5px;border:1px solid #dbdbdb;resize:none;}
 
-
-.mainTop .eng {font-size:12px;}
-.fontCtrl, .headerSitemap a {font-size:13px;}
-.mainTabContents .mainList a {font-size:16px;}
-.mainLinkGroup1 a,.mainLinkGroup3 a {font-size:18px;}
-.mainTabContents .tabMenu a,
-#header .gnb a, .mainTop .link, .mainLinkGroup2 a {font-size:20px;}
-.mainTop .txt1, .mainTop .txt2 {font-size:48px;}
-
-.skipNavi li {font-size:0;line-height:0;}
-.skipNavi li a {position:fixed;top:-100px;left:0;width:100%;padding:10px 0;background:#044894;color:#fff;line-height:2;text-align:center;z-index:500;}
-.skipNavi li a:focus {top:0;}
-
 .chk {display:inline-block;cursor:pointer;vertical-align:middle;}
 .chk + .chk {margin:0 0 0 5px;}
 .chk input {position:absolute;visibility:hidden;position:static\9;visibility:visible\9;}
