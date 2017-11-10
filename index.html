@@ -34,7 +34,7 @@
 		<div class="util">
 			<p class="fontCtrl">
 				<span>글자크기</span>
-				<button type="button" class="fontMinus">축소</button><button type="button" class="fontPlus">확대</button>
+				<button type="button" class="fontMinus" onclick="fontCtrl('minus');">축소</button><button type="button" class="fontPlus" onclick="fontCtrl('plus');">확대</button>
 			</p>
 			<p class="headerSitemap"><a href="#">사이트맵</a></p>
 		</div>
@@ -68,29 +68,29 @@
 					<span class="item4"><a href="#">찾아오시는 길</a></span>
 				</div>
 			</nav>
-			<div class="mainTabContents">
+			<div class="mainTabContents tabContents">
 				<ul class="tabMenu">
-					<li class="active"><a href="#">공지사항</a></li>
-					<li><a href="#">자료실</a></li>
+					<li class="active"><a href="#" onclick="tabMenu(this);return false;">공지사항</a></li>
+					<li><a href="#" onclick="tabMenu(this);return false;">자료실</a></li>
 				</ul>
 				<section class="tabContent" style="display:block;">
 					<h2 class="hidden">공지사항</h2>
 					<ul class="mainList">
 						<li>
 							<a href="#">
-								<span class="txt">2017년 (제18회) 정보시스템 감리사 자격검정시험 안내</span>
+								<span class="txt">공지사항 2017년 (제18회) 정보시스템 감리사 자격검정시험 안내</span>
 								<span class="date">2017-03-02</span>
 							</a>
 						</li>
 						<li>
 							<a href="#">
-								<span class="txt">2017년 (제18회) 정보시스템 감리사 자격검정시험 안내</span>
+								<span class="txt">공지사항 2017년 (제18회) 정보시스템 감리사 자격검정시험 안내</span>
 								<span class="date">2017-03-02</span>
 							</a>
 						</li>
 						<li>
 							<a href="#">
-								<span class="txt">2017년 (제18회) 정보시스템 감리사 자격검정시험 안내</span>
+								<span class="txt">공지사항 2017년 (제18회) 정보시스템 감리사 자격검정시험 안내</span>
 								<span class="date">2017-03-02</span>
 							</a>
 						</li>
@@ -113,19 +113,19 @@
 					<ul class="mainList">
 						<li>
 							<a href="#">
-								<span class="txt">2017년 (제18회) 정보시스템 감리사 자격검정시험 안내</span>
+								<span class="txt">자료실 2017년 (제18회) 정보시스템 감리사 자격검정시험 안내</span>
 								<span class="date">2017-03-02</span>
 							</a>
 						</li>
 						<li>
 							<a href="#">
-								<span class="txt">2017년 (제18회) 정보시스템 감리사 자격검정시험 안내</span>
+								<span class="txt">자료실 2017년 (제18회) 정보시스템 감리사 자격검정시험 안내</span>
 								<span class="date">2017-03-02</span>
 							</a>
 						</li>
 						<li>
 							<a href="#">
-								<span class="txt">2017년 (제18회) 정보시스템 감리사 자격검정시험 안내</span>
+								<span class="txt">자료실 2017년 (제18회) 정보시스템 감리사 자격검정시험 안내</span>
 								<span class="date">2017-03-02</span>
 							</a>
 						</li>
@@ -155,9 +155,9 @@
 			<span><a href="#">이메일무단수집거부</a></span>
 			<span><a href="#">찾아오시는 길</a></span>
 		</nav>
-		<section>
-			<span><button>관련 사이트</button></span>
-			<ul>
+		<section class="siteLink">
+			<span class="siteBtn"><button type="button" onclick="siteOpen('siteList');">관련 사이트</button></span>
+			<ul class="siteList">
 				<li><a href="#">관련 사이트</a></li>
 				<li><a href="#">관련 사이트</a></li>
 				<li><a href="#">관련 사이트</a></li>
@@ -168,13 +168,13 @@
 	</div>
 	<section class="footerInfo">
 		<div class="footerInfoInner">
-			<p>한국정보화진흥원</p>
-			<p>
+			<p class="footInfoTxt">
 				<span>41068 대구광역시 동구 첨단로 53</span>
 				<span>TEL : 053-230-1616</span>
 				<span>E-mail : <a href="mailto:auditor@nia.or.kr">auditor@nia.or.kr</a></span>
 				<small>COPYRIGHT &copy; <span>2017 한국정보화진흥원.</span> ALL RIGHTS RESERVED.</small>
 			</p>
+			<p class="footLogo"><img src="images/img_footer_logo.gif" alt="한국정보화진흥원"></p>
 		</div>
 	</section>
 </footer>
