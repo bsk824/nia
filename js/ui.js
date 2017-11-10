@@ -1,5 +1,37 @@
-var winW = $(window).width(),
-	respChk = "pc";
+var winW = $(window).width();
+var fontNum = 3;
+function fontCtrl(o) {
+	var wrap = $('html')
+	if (o === 'minus' && fontNum > 1) {
+		fontNum -= 1;
+		wrap.removeAttr('class').addClass('fontCtrl'+fontNum);
+	}
+	if (o === 'plus' && fontNum < 5) {
+		fontNum += 1;
+		wrap.removeAttr('class').addClass('fontCtrl'+fontNum);
+	}
+}
+function siteOpen(obj) {
+	var listWrap = $('.'+obj);
+	listWrap.show();
+	listWrap.on('mouseleave', function(){
+		$(this).hide();
+	});
+}
+function tabMenu(_this) {
+	var $this = $(_this),
+		tabWrap = $this.closest('.tabContents'),
+		tabList = tabWrap.find('.tabMenu'),
+		tabContent = tabWrap.find('.tabContent');
+
+	tabList.on('click', function(){
+		var idx = $this.parent().index();
+		tabList.find('li').eq(idx).addClass('active').siblings().removeClass('active');
+		tabContent.eq(idx).show().siblings('.tabContent').hide();
+	})
+
+
+}
 function fontSize(w) {
 	if (w <= 560) {
 		var fontSize = w / 5.12;
