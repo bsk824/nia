@@ -2,25 +2,50 @@
 
 .skipNavi li a {position:fixed;top:-100px;left:0;width:100%;padding:10px 0;background:#bf91f3;color:#fff;text-align:center;z-index:100;}
 .skipNavi li a:focus {top:0;}
-.main .skipNavi li.side, .nonSnb .skipNavi li.side {display:none;}
+.main .skipNavi li.side {display:none;}
 
 #header {position:relative;border-bottom:3px solid #bf91f3;}
-#header .headerInner {width:1000px;margin:0 auto;}
+#header .headerInner {position:relative;width:1000px;margin:0 auto;}
 #header .headerInner:after {content:"";display:block;clear:both;}
-#header h1 {float:left;}
+#header h1 {position:absolute;top:0;left:0;bottom:0;line-height:1;}
+#header h1:after {content:"";display:inline-block;height:100%;vertical-align:middle;}
+#header h1 a {display:inline-block;vertical-align:middle;}
 #header h1 img {width:155px;}
-#header .gnb {float:left;}
-#header .gnb li {display:inline-block;}
+#header .gnb {float:left;padding:0 0 0 280px;}
+#header .gnb li {display:inline-block;margin-left:60px;padding:35px 0;line-height:1;}
+#header .gnb li:first-child {margin:0;}
 #header .gnb a {color:#222;}
-#header .util {float:right;}
+#header .util {float:right;margin:33px 0 0;}
 #header .fontCtrl,
 #header .headerSitemap {display:inline-block;color:#888;}
-#header .headerSitemap a {color:#888;}
+#header .headerSitemap a {color:#888;margin:0 0 0 14px;}
 #header .fontCtrl button {width:26px;height:25px;background:url(../images/btn_font_minus.gif) no-repeat;border:1px solid #e7e7e7;font:0/0 a;}
+#header .fontCtrl button.fontMinus {margin:0 0 0 5px;}
 #header .fontCtrl button.fontPlus {background:url(../images/btn_font_plus.gif) no-repeat;border-left:0;}
 
-#container {width:1000px;margin:0 auto;}
+#container {width:1000px;margin:0 auto;outline:0 none;}
 
+#footer {border-top:1px solid #dedede;}
+#footer .footerLink {width:1000px;margin:0 auto;}
+#footer .footerLink:after {content:"";display:block;clear:both;}
+#footer .footerLink nav {float:left;}
+#footer .footerLink nav > span {float:left;margin:15px 0;padding-right:19px;line-height:1;}
+#footer .footerLink nav > span + span {padding-left:19px;border-left:1px solid #dedede;}
+#footer .footerLink .siteLink {position:relative;float:right;}
+#footer .footerLink .siteBtn {display:block;border-right:1px solid #dedede;border-left:1px solid #dedede;}
+#footer .footerLink .siteBtn:after {content:"";position:absolute;top:50%;right:18px;width:12px;height:8px;margin-top:-4px;background:url(../images/icon_footer_site_arrrow.gif) no-repeat;}
+#footer .footerLink .siteBtn button {width:248px;padding:15px 0 15px 19px;line-height:1;text-align:left;}
+#footer .footerLink .siteList {display:none;position:absolute;left:0;bottom:0;right:0;padding:15px 0;background:#fff;border:1px solid #dedede;z-index:2;}
+#footer .footerLink .siteList li + li {margin-top:10px;}
+#footer .footerLink .siteList a {display:block;padding:0 0 0 19px;line-height:1;}
+#footer .footerInfo {padding:25px 0 57px;background:#f6f6f4;border-top:1px solid #dedede;}
+#footer .footerInfo .footerInfoInner {position:relative;width:1000px;margin:0 auto;}
+#footer .footerInfo .footLogo {position:absolute;top:0;left:0;}
+#footer .footerInfo .footInfoTxt {margin:0 0 0 250px;}
+#footer .footerInfo .footInfoTxt > span {display:inline-block;padding:0 6px 0 9px;border-left:1px solid #dedede;line-height:1;}
+#footer .footerInfo .footInfoTxt > span:first-child {padding-left:0;border:0;}
+#footer .footerInfo .footInfoTxt small {display:block;}
+#footer .footerInfo .footInfoTxt small span {color:#233a7b;}
 
 /* main */
 .main #container, .main #contents {width:auto;float:none;}
@@ -31,7 +56,7 @@
 .mainTop .txt2 {font-family:notoB;}
 .mainTop .link {display:block;width:230px;margin:85px 0 0;border:2px solid #666;color:#333;line-height:2.5;text-align:center;}
 
-.mainContents {position:relative;width:1000px;margin:40px auto 0;}
+.mainContents {position:relative;width:1000px;margin:40px auto;}
 .mainContents .mainLinkGroup1,
 .mainContents .mainLinkGroup2 {display:inline-block;width:485px;margin:0 0 0 515px;}
 .mainContents .mainLinkGroup2 {margin:20px 0 25px 515px;}
@@ -69,5 +94,86 @@
 .mainTabContents .mainList {padding:25px 30px;}
 .mainTabContents .mainList li + li {margin-top:24px;}
 .mainTabContents .mainList a {position:relative;display:block;padding:0 105px 0 7px;background:url(../images/bul_circle.gif) no-repeat 0 50%;line-height:1;}
-.mainTabContents .mainList .txt {display:block;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;color:#666;}
+.mainTabContents .mainList .txt {display:block;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;}
 .mainTabContents .mainList .date {position:absolute;top:0;right:0;color:#999;}
+
+/* font control */
+.mainTop .eng {font-size:12px;}
+.fontCtrl,
+.headerSitemap a {font-size:13px;}
+.footerInfo .footInfoTxt small {font-size:14px;}
+.footerLink nav a,
+.siteLink button {font-size:15px;}
+.mainTabContents .mainList a {font-size:16px;}
+.mainLinkGroup1 a,
+.mainLinkGroup3 a {font-size:18px;}
+.mainTabContents .tabMenu a,
+#header .gnb a,
+.mainTop .link,
+.mainLinkGroup2 a {font-size:20px;}
+.mainTop .txt1,
+.mainTop .txt2 {font-size:48px;}
+
+.fontCtrl5 .mainTop .eng {font-size:13px;}
+.fontCtrl5 .fontCtrl,
+.fontCtrl5 .headerSitemap a {font-size:16px;}
+.fontCtrl5 .footerInfo .footInfoTxt small {font-size:17px;}
+.fontCtrl5 .footerLink nav a,
+.fontCtrl5 .siteLink button {font-size:18px;}
+.fontCtrl5 .mainTabContents .mainList a {font-size:19px;}
+.fontCtrl5 .mainLinkGroup1 a,
+.fontCtrl5 .mainLinkGroup3 a {font-size:20px;}
+.fontCtrl5 .mainTabContents .tabMenu a,
+.fontCtrl5 #header .gnb a,
+.fontCtrl5 .mainTop .link,
+.fontCtrl5 .mainLinkGroup2 a {font-size:22px;}
+.fontCtrl5 .mainTop .txt1,
+.fontCtrl5 .mainTop .txt2 {font-size:50px;}
+
+.fontCtrl4 .mainTop .eng {font-size:13px;}
+.fontCtrl4 .fontCtrl,
+.fontCtrl4 .headerSitemap a {font-size:14px;}
+.fontCtrl4 .footerInfo .footInfoTxt small {font-size:15px;}
+.fontCtrl4 .footerLink nav a,
+.fontCtrl4 .siteLink button {font-size:16px;}
+.fontCtrl4 .mainTabContents .mainList a {font-size:17px;}
+.fontCtrl4 .mainLinkGroup1 a,
+.fontCtrl4 .mainLinkGroup3 a {font-size:19px;}
+.fontCtrl4 .mainTabContents .tabMenu a,
+.fontCtrl4 #header .gnb a,
+.fontCtrl4 .mainTop .link,
+.fontCtrl4 .mainLinkGroup2 a {font-size:21px;}
+.fontCtrl4 .mainTop .txt1,
+.fontCtrl4 .mainTop .txt2 {font-size:49px;}
+
+.fontCtrl2 .mainTop .eng {font-size:11px;}
+.fontCtrl2 .fontCtrl,
+.fontCtrl2 .headerSitemap a {font-size:12px;}
+.fontCtrl2 .footerInfo .footInfoTxt small {font-size:13px;}
+.fontCtrl2 .footerLink nav a,
+.fontCtrl2 .siteLink button {font-size:14px;}
+.fontCtrl2 .mainTabContents .mainList a {font-size:15px;}
+.fontCtrl2 .mainLinkGroup1 a,
+.fontCtrl2 .mainLinkGroup3 a {font-size:16px;}
+.fontCtrl2 .mainTabContents .tabMenu a,
+.fontCtrl2 #header .gnb a,
+.fontCtrl2 .mainTop .link,
+.fontCtrl2 .mainLinkGroup2 a {font-size:19px;}
+.fontCtrl2 .mainTop .txt1,
+.fontCtrl2 .mainTop .txt2 {font-size:47px;}
+
+.fontCtrl1 .mainTop .eng {font-size:10px;}
+.fontCtrl1 .fontCtrl,
+.fontCtrl1 .headerSitemap a {font-size:11px;}
+.fontCtrl1 .footerInfo .footInfoTxt small {font-size:12px;}
+.fontCtrl1 .footerLink nav a,
+.fontCtrl1 .siteLink button {font-size:13px;}
+.fontCtrl1 .mainTabContents .mainList a {font-size:14px;}
+.fontCtrl1 .mainLinkGroup1 a,
+.fontCtrl1 .mainLinkGroup3 a {font-size:15px;}
+.fontCtrl1 .mainTabContents .tabMenu a,
+.fontCtrl1 #header .gnb a,
+.fontCtrl1 .mainTop .link,
+.fontCtrl1 .mainLinkGroup2 a {font-size:18px;}
+.fontCtrl1 .mainTop .txt1,
+.fontCtrl1 .mainTop .txt2 {font-size:46px;}
