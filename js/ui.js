@@ -77,6 +77,7 @@ function getInternetVersion(ver) {
 }
 function browserCheck() {
 	var ver = 0;
+	alert();
 	if(navigator.appName.charAt(0) == "M"){
 		ver = getInternetVersion("MSIE");
 		if (ver < "9"){
