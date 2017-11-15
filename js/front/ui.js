@@ -1,16 +1,4 @@
 var winW = $(window).width();
-var fontNum = 3;
-function fontCtrl(o) {
-	var wrap = $('html')
-	if (o === 'minus' && fontNum > 1) {
-		fontNum -= 1;
-		wrap.removeAttr('class').addClass('fontCtrl'+fontNum);
-	}
-	if (o === 'plus' && fontNum < 5) {
-		fontNum += 1;
-		wrap.removeAttr('class').addClass('fontCtrl'+fontNum);
-	}
-}
 function siteOpen(obj) {
 	var listWrap = $('.'+obj);
 	listWrap.show();
