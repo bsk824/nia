@@ -21,7 +21,7 @@
 }
 * {margin:0;padding:0;}
 html {font-size:62.5%;}
-body {min-width:1000px\9;color:#666;font:14px/1.5 notoR, sans-serif;-webkit-text-size-adjust:none;word-break:keep-all;}
+body {min-width:1000px\9;color:#666;font:14px/1.5 notoR, sans-serif;-webkit-text-size-adjust:none;word-break:keep-all;letter-spacing:-1px;}
 h1, h2, h3, h4, h5 {font-weight:normal;}
 a {color:#666;text-decoration:none;}
 li {list-style:none;}
@@ -83,7 +83,7 @@ textarea, input.txt {padding:7px 5px;border:1px solid #dbdbdb;resize:none;}
 	.radio input:checked + span:before {background-position:-5.5rem -4.1rem;}
 }
 @media all and (max-width:560px) {
-	body, input, select, textarea, button {font-size:1.2rem;letter-spacing:-.05rem;}
+	body, input, select, textarea, button {font-size:1.2rem;}
 
 	.ui-datepicker {width:24rem;border:.1rem solid #ccc;}
 	.ui-datepicker .ui-datepicker-header {padding:.5rem 0;}

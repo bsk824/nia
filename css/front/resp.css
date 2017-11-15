@@ -24,10 +24,10 @@
 .mainContents {width:100%;margin:4rem 0;}
 .mainContents .mainLinkGroup1,
 .mainContents .mainLinkGroup2 {width:100%;margin-left:0;vertical-align:top;}
-.mainContents .mainLinkGroup2 {margin:2rem 0;}
 .mainContents .mainLinkGroup1 {display:table;}
 .mainContents .mainLinkGroup1 > span {display:table-cell;float:none;width:33.33% !important;}
 
+.mainContents .mainLinkGroup2 {margin:2rem 0;}
 .mainContents .mainLinkGroup2 > span {width:50%;box-sizing:border-box;}
 .mainContents .mainLinkGroup2 a {margin-right:.5rem;padding:3.6rem 0 3.6rem 7.8rem;border:1px solid #e9e9e9;}
 .mainContents .mainLinkGroup2 .item2 a {margin:0 0 0 .5rem;}
@@ -39,11 +39,9 @@
 
 .mainTabContents {position:static;width:100%;margin:2rem 0 0;padding:1.4rem 1.5rem;box-sizing:border-box;}
 
-
 .mainTop .eng {font-size:1.2rem;}
-.fontCtrl,
-.headerSitemap a {font-size:1.3rem;}
 .footerInfo .footInfoTxt small {font-size:1.4rem;}
+.headerSitemap a,
 .footerLink nav a,
 .siteLink button {font-size:1.5rem;}
 .mainTabContents .mainList a {font-size:1.6rem;}
@@ -55,3 +53,63 @@
 .mainLinkGroup2 a {font-size:2rem;}
 .mainTop .txt1,
 .mainTop .txt2 {font-size:4.8rem;}
+
+@media screen and (max-width:767px){
+    #header {border-bottom:1px solid #dfdfe0;}
+    #header h1 {position:static;padding:1.5rem 0;text-align:center;}
+    #header h1 img {width:13rem;}
+    #header .gnb {float:none;padding:0;}
+    #header .gnb:after {content:"";display:block;clear:both;}
+    #header .gnb li {float:left;margin:0;padding:0;width:33.33%;text-align:center;}
+    #header .gnb li a {display:inline-block;padding:1.5rem 0;font-size:1.4rem;}
+    #header .util {display:none;}
+
+    #footer {margin:3rem 0 0;padding:0 1.5rem;background:#f6f6f4;}
+    #footer .footerLink {padding:0;}
+    #footer .footerLink nav {float:none;text-align:center;}
+    #footer .footerLink nav > span {position:relative;display:inline-block;float:none;margin:0;padding:1rem 0;}
+    #footer .footerLink nav > span + span {margin:0 0 0 .6rem;padding:0 0 0 .8rem;border:0;}
+    #footer .footerLink nav > span + span:after {content:"";position:absolute;top:50%;left:0;width:.1rem;height:1.2rem;margin-top:-.6rem;background:#dedede;}
+    #footer .footerLink nav a {font-size:1rem;}
+    #footer .siteLink {display:none;}
+
+    #footer .footerInfo {padding:0;text-align:center;}
+    #footer .footerInfo .footerInfoInner {padding:1.5rem 0;}
+    #footer .footerInfo .footInfoTxt {margin:0;}
+    #footer .footerInfo .footLogo {position:static;width:9rem;margin:0 auto;}
+    #footer .footerInfo .footInfoTxt > span:first-child {display:block;margin:0 0 .5rem;}
+    #footer .footerInfo .footInfoTxt > span:nth-of-type(2) {border:0;}
+    #footer .footerInfo .footInfoTxt small {margin:2rem 0 2.5rem;font-size:1.1rem;}
+
+    .mainTop {height:24rem;margin:0 -1.5rem;padding:0;background-size:cover;text-align:center;}
+    .mainTop h1 {padding:4.5rem 0 0;}
+    .mainTop .eng {display:none;}
+    .mainTop .txt1,
+    .mainTop .txt2 {font-size:2.4rem;}
+    .mainTop .link {display:none;width:23rem;margin:8.5rem 0 0;}
+    
+    .mainContents {margin:-5rem 0 0;}
+    .mainContents .mainLinkGroup1 a {padding:10rem 0 2rem;color:#fff;font-size:1.3rem;}
+    .mainContents .mainLinkGroup1 .item1 a {background:#f0a332 url(../../images/front/mobile/icon_main_link01.gif) no-repeat 50% 40%;background-size:5.5rem;}
+    .mainContents .mainLinkGroup1 .item2 a {background:#a69684 url(../../images/front/mobile/icon_main_link02.gif) no-repeat 50% 40%;background-size:5.5rem;}
+    .mainContents .mainLinkGroup1 .item3 a {background:#bf91f3 url(../../images/front/mobile/icon_main_link03.gif) no-repeat 50% 40%;background-size:5.5rem;}
+
+    .mainContents .mainLinkGroup2 span {border:0;}
+    .mainContents .mainLinkGroup2 {margin:1.5rem 0;}
+    .mainContents .mainLinkGroup2 a {padding:2.7rem 0 2.3rem 5rem;font-size:1.4rem;background-size:4.5rem;}
+    .mainContents .mainLinkGroup2 a span {padding:0;background:none;}
+    .mainContents .mainLinkGroup2 .item2 {background-size:4rem;}
+    .mainContents .mainLinkGroup2 .item2 a {padding-right:5.5rem;background-size:4.8rem;}
+
+    .mainContents .mainLinkGroup3 span a {padding:2.2rem 0 2rem 5rem;background-size:3.2rem;background-position:1.5rem 50%;font-size:1.2rem;}
+
+    .mainTabContents {margin:1.5rem 0 0;padding:1em;}
+    .mainTabContents .tabMenu a {padding:1.2rem 0 1rem;font-size:1.5rem;}
+    .mainTabContents .tabMenu .active a {background-size:2rem;}
+    .mainTabContents .tabContent {min-height:15rem;}
+    .mainTabContents .mainList {padding:2rem 1.5rem;}
+    .mainTabContents .mainList li + li {margin-top:1.5rem;}
+    .mainTabContents .mainList a {padding:0 6rem 0 .6rem;background-position:0 35%;font-size:1.2rem;}
+    
+    
+}
