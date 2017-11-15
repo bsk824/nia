@@ -31,18 +31,18 @@ input, select, textarea, button {vertical-align:middle;font:14px/1.5 notoR, Sans
 fieldset, img {border:0;}
 img {vertical-align:top;}
 label, td img {vertical-align:middle;}
-legend, caption, .hidden {position:absolute;z-index:-1;font:0/0 a!important;}
+legend, caption, .hidden {position:absolute;z-index:-1;font:0/0 a;}
 address, em {font-style:normal;}
 strong, b {font-weight:normal;}
-button {overflow:visible;cursor:pointer;background:none;border:0;}
+button {overflow:visible;cursor:pointer;background:none;border:0;border-radius:0;letter-spacing:-1px;}
 button::-moz-focus-inner {padding:0;border:0;}
 article, aside, canvas, details, figcaption, figure, footer, header, hgroup, nav, menu, nav, section {display:block;}
 
 ::-webkit-input-placeholder, ::-moz-placeholder, :-ms-input-placeholder {color:#666;}
 
-input.txt {line-height:1;}
-select {height:30px;border:1px solid #dbdbdb;}
-textarea, input.txt {padding:7px 5px;border:1px solid #dbdbdb;resize:none;}
+.inpuTxt {line-height:1;border-radius:0;}
+select {height:30px;border:1px solid #ccc;}
+textarea, .inpuTxt {padding:7px 5px;border:1px solid #ccc;resize:none;}
 
 .chk {display:inline-block;cursor:pointer;vertical-align:middle;}
 .chk + .chk {margin:0 0 0 5px;}
@@ -56,10 +56,10 @@ textarea, input.txt {padding:7px 5px;border:1px solid #dbdbdb;resize:none;}
 .radio input + span:before {content:"";display:inline-block;display:none\9;width:25px;height:25px;margin:0 4px 0 0;vertical-align:middle;background:url('../../images/front/icon_pack.png') no-repeat -30px -41px;}
 .radio input:checked + span:before {background-position:-55px -41px;}
 
-.ui-datepicker {width:240px;display:none;background:#fff;border:1px solid #ccc;z-index:10!important;}
+.ui-datepicker {width:240px;display:none;background:#fff;border:1px solid #ccc;z-index:10;}
 .ui-datepicker .ui-datepicker-header {position:relative;padding:5px 0;text-align:center;}
 .ui-datepicker .ui-datepicker-prev,
-.ui-datepicker .ui-datepicker-next {position:absolute;top:10px;font:0/0 a!important;}
+.ui-datepicker .ui-datepicker-next {position:absolute;top:10px;font:0/0 a;}
 .ui-datepicker .ui-datepicker-prev {left:2px;border:6px solid transparent;border-right:6px solid #333;}
 .ui-datepicker .ui-datepicker-next {right:2px;border:6px solid transparent;border-left:6px solid #333;}
 .ui-datepicker select.ui-datepicker-month,
