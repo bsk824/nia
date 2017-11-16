@@ -170,11 +170,12 @@
 .infoTable table .line {border-left:1px solid #e3e3e3;}
 .infoTable table .center {text-align:center;} 
 .infoTable table .left {text-align:left;}
+.typeWrite td {padding:7px 9px;}
 
 /* bbs */
 .bbsSearch {text-align:right;}
-.bbsSearch select {min-width:130px;height:30px;color:#333;font-size:13px;vertical-align:middle;}
-.bbsSearch .inpuTxt {position:relative;display:inline-block;padding:0 36px 0 5px;height:28px;vertical-align:middle;}
+.bbsSearch select {min-width:130px;height:30px;border:1px solid #ccc;color:#333;font-size:13px;vertical-align:middle;}
+.bbsSearch .inpuTxt {position:relative;display:inline-block;padding:0 36px 0 5px;height:28px;border:1px solid #ccc;vertical-align:middle;}
 .bbsSearch .inpuTxt input[type="text"] {width:160px;height:100%;border:0;font-size:13px;}
 .bbsSearch .inpuTxt .btnSearch {position:absolute;top:0;right:0;width:36px;height:28px;background:url(../../images/front/btn_search.gif) no-repeat;font:0/0 a;}
 
@@ -232,6 +233,6 @@
 .btnWrap .btnLeft {float:left;}
 .btnWrap .btnRight {float:right;}
 
-[class*="btnType"] {display:inline-block;}
-.btnType1 {padding:8px 18px;border:1px solid #747474;color:#444;font-size:13px;line-height:1;}
-.btnType2 {padding:8px 18px;border:1px solid #bf91f3;background:#bf91f3;color:#222;;font-size:13px;line-height:1;}
+[class*="btnType"] {display:inline-block;padding:5px 18px 4px;font-size:13px;vertical-align:middle;}
+.btnType1 {border:1px solid #747474;color:#444;}
+.btnType2 {border:1px solid #bf91f3;background:#bf91f3;color:#222;}

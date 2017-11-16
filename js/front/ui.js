@@ -50,6 +50,13 @@ function setCookie(cname, cvalue, exdays) {
 	document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
 }
 $(function(){
+	$('.inputFile input[type="file"]').on('change', function() {
+		var $this = $(this),
+			txt = $this.parent().prev('input[type="text"]');
+			val = $this.val();
+		txt.val(val);
+	});
+	
 	function getInternetVersion(ver) {
 		var rv = -1;
 		var ua = navigator.userAgent;
