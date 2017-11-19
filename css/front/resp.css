@@ -84,7 +84,7 @@
     .breadcrumbInner .home {width:1.3rem;height:1.4rem;background:url(../../images/front/mobile/img_home.gif) no-repeat;background-size:cover;}
     .breadcrumbInner .current {display:none;}
     .breadcrumb span,
-    .breadcrumb .mob {position:relative;display:inline-block;margin-left:1rem;padding:.8rem 0 .8rem 1.6rem;z-index:2;background:url(../../images/front/mobile/img_breadcrumb_arrow.gif) no-repeat 0 50%;background-size:.6rem;vertical-align:middle;}
+    .breadcrumb .mob {position:relative;display:inline-block;margin-left:1rem;padding:.8rem 0 .8rem 1.6rem;z-index:2;background:url(../../images/front/mobile/img_breadcrumb_arrow.gif) no-repeat 0 50%;background-size:.6rem;vertical-align:middle;line-height:1;}
     .breadcrumb .mob button {padding-right:1.2rem;color:#333;font-weight:bold;}
     .breadcrumb .mob button:after {content:"";display:inline-block;margin-left:.5rem;border:.4rem solid transparent;border-top:.5rem solid #333;vertical-align:middle;}
     
