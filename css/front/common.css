@@ -140,6 +140,18 @@
 /* section */
 .subSection + .subSection {margin:55px 0 0;}
 
+/* list */
+.bulDot > li,
+.bulDotTxt {padding-left:9px;background:url(../../images/front/bul_dot.gif) no-repeat 0 10px;font-size:16px;}
+.bulDot > li + li {margin-top:10px;}
+
+.bulDash > li,
+.bulDashTxt {padding-left:6px;background:url(../../images/front/bul_dash.gif) no-repeat 0 8px;font-size:14px;}
+
+.numList li {position:relative;padding-left:18px;font-size:16px;}
+.numList li .num {position:absolute;top:0;left:0;color:#bf91f3;}
+.numList li + li {margin:5px 0 0;}
+
 /* tabmenu */
 .tabMenu:after {content:"";display:block;clear:both;}
 .tabMenu li {float:left;}
@@ -159,17 +171,7 @@
 /* color */
 .fontColor1 {color:#bf91f3;}
 
-/* list */
-.bulDot > li,
-.bulDotTxt {padding-left:9px;background:url(../../images/front/bul_dot.gif) no-repeat 0 10px;font-size:16px;}
-.bulDot > li + li {margin-top:10px;}
 
-.bulDash > li,
-.bulDashTxt {padding-left:6px;background:url(../../images/front/bul_dash.gif) no-repeat 0 8px;font-size:14px;}
-
-.numList li {position:relative;padding-left:18px;font-size:16px;}
-.numList li .num {position:absolute;top:0;left:0;color:#bf91f3;}
-.numList li + li {margin:5px 0 0;}
 
 /* table */
 .infoTable {border-top:1px solid #474e61;}
