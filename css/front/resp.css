@@ -165,8 +165,66 @@
     .bulDash > li,
     .bulDashTxt {padding-left:.6rem;background-position:0 .7rem;font-size:1.2rem;}
 
-    .numList li {position:relative;padding-left:18px;font-size:16px;}
-    .numList li .num {position:absolute;top:0;left:0;color:#bf91f3;}
-    .numList li + li {margin:5px 0 0;}
+    .numList li {padding-left:1.2rem;font-size:1.3rem;}
+    .numList li + li {margin:.5rem 0 0;}
+    
+    /* box */
+    .boxType1 {padding:1.5rem;border-width:.2rem}
 
+    /* tabmenu */
+    .tabMenu li a {padding:1.2rem 0;margin:0 -1px;font-size:1.4rem;}
+
+    /* txt */
+    .tip {margin-top:1.2rem;font-size:1.1rem;}
+    
+    /* table */
+    .infoTable th,
+    .infoTable td {padding:1rem .5rem;font-size:1.2rem;}
+
+    /* bbs */}
+    .bbsSearch select {min-width:10rem;height:3rem;font-size:1.3rem;}
+    .bbsSearch .inpuTxt {padding:0 3.6rem 0 .5rem;height:2.8rem;}
+    .bbsSearch .inpuTxt input[type="text"] {width:12rem;font-size:1.3rem;}
+    .bbsSearch .inpuTxt .btnSearch {width:3.6rem;height:2.8rem;background:url(../../images/front/mobile/btn_search.gif) no-repeat;background-size:cover;}
+
+    .bbsSearch ~ .bbsList {margin:1rem 0 0;}
+    .bbsList:before, .bbsList:after {display:none;}
+    
+    .bbsList li a {display:block;padding:1rem .5rem;}
+    .bbsList li a > span {display:inline-block;width:auto !important;text-align:left;line-height:1;font-size:1.2rem;color:#999;}
+    .bbsList li a > span:before {position:static;display:inline;margin-right:.4rem;color:#999;}
+    .bbsList li a > span:last-child {padding-left:1rem;margin-left:1rem;border-left:1px solid #ccc;}
+    .bbsList li a > span.subject {display:block;margin:0 0 .3rem;padding:0;}
+    .bbsList li a > span.subject:before {display:none;}
+    .bbsList li a > span.subject .txt {max-width:80%;color:#666;}
+    .bbsList [class*="bbsIcon"] {display:inline-block;margin-left:5px;font:0/0 a;vertical-align:middle;}
+    .bbsList .bbsIconNew {width:1.5rem;height:1.5rem;background:url(../../images/front/mobile/icon_new.png) no-repeat;background-size:cover;}
+    .bbsList .bbsIconFile {width:1.4rem;height:1.5rem;background:url(../../images/front/mobile/icon_file.png) no-repeat;background-size:cover;}
+    .bbsList .no {display:none;}
+
+     .bbsView .bbsViewTitle {padding:1.5rem 1.5rem 0;font-size:1.8rem;background:#f8f8f8;}
+    .bbsView .bbsViewInfo {display:block;padding:.5rem 1.5rem 1.5rem;box-sizing:border-box;background:#f8f8f8;}
+    .bbsView .bbsViewInfo dt,
+    .bbsView .bbsViewInfo dd {display:inline-block;padding:0;border:0;line-height:1;font-size:1.2rem;}
+    .bbsView .bbsViewInfo dt {width:auto;margin-left:1rem;padding-left:1rem;background:none;border-left:1px solid #ccc;color:#999;font-weight:normal;}
+    .bbsView .bbsViewInfo dt:first-child {margin:0;padding:0;border-left:0;}
+    .bbsReply .file a,
+    .bbsView .bbsViewInfo .file a {position:relative;margin:.5rem 0;padding-left:1.8rem;background:url(../../images/front/mobile/icon_file.png) no-repeat 0 50%;background-size:1.4rem;}
+    .bbsReply .file a span,
+    .bbsView .bbsViewInfo .file a span {color:#b4b4b4;}
+    .bbsView .bbsContent {padding:25px 20px 50px;border-top:1px solid #e8e8e8;}
+    .bbsView .typeFile {background:none;}
+    .bbsView .typeFile dt {display:none;}
+    .bbsView .typeFile dd {line-height:1.5;}
+
+    .pagination {margin:3rem 0 0;letter-spacing:.2rem;}
+    .pagination [class*="page"] {width:3rem;height:3rem;margin:0 1rem;}
+    .pagination .pagePrev {background:url(../../images/front/mobile/btn_pagination_prev.gif) no-repeat;background-size:cover;}
+    .pagination .pageNext {background:url(../../images/front/mobile/btn_pagination_next.gif) no-repeat;background-size:cover;}
+    .pagination .pageStart,
+    .pagination .pageEnd {display:none;}
+    .pagination .paging {margin:0;font-size:1.5rem;vertical-align:middle;}
+    .pagination .paging strong {display:inline-block;margin:0;line-height:1;text-decoration:none;vertical-align:middle;}
+    .pagination .paging button {display:none;}
+    .pagingLength {display:inline-block;font-size:1.5rem;line-height:1;vertical-align:middle;}
 }
