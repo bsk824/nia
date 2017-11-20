@@ -58,14 +58,17 @@ $(function(){
 			val = $this.val();
 		txt.val(val);
 	});
+
 	$('.snbNav button').on('click', function(){
 		var $this = $(this);
 		active($this,'open');
 	});
+
 	$('.breadcrumb .mob button').on('click', function(){
 		var $this = $(this);
 		$this.parent().toggleClass('active');
 	});
+	
 	$('.tabMenu a').on('click', function(){
 		var $this = $(this);
 		active($this,'active');

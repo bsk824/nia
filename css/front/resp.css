@@ -176,11 +176,16 @@
     .tabMenu li a {padding:1.2rem 0;margin:0 -1px;font-size:1.4rem;}
 
     /* txt */
-    .tip {margin-top:1.2rem;font-size:1.1rem;}
+    .tipTxt {margin-top:1.2rem;font-size:1.1rem;}
     
     /* table */
     .infoTable th,
     .infoTable td {padding:1rem .5rem;font-size:1.2rem;}
+    .typeWrite colgroup {display:none;}
+    .typeWrite th {padding:0 1.5rem;}
+    .typeWrite td {padding:.3rem .9rem;}
+    .typeWrite .errorTxt {display:block;margin:.5rem 0 0;color:#e95c5c;font-size:1.1rem;}
+    .typeWrite .tip {display:block;margin:.5rem 0 0;padding:0 0 0 1.5rem;background:url(../../images/front/mobile/icon_mark.gif) no-repeat 0 .3rem;background-size:1.1rem;font-size:1.1rem;}
 
     /* bbs */}
     .bbsSearch select {min-width:10rem;height:3rem;font-size:1.3rem;}
@@ -203,7 +208,13 @@
     .bbsList .bbsIconFile {width:1.4rem;height:1.5rem;background:url(../../images/front/mobile/icon_file.png) no-repeat;background-size:cover;}
     .bbsList .no {display:none;}
 
-     .bbsView .bbsViewTitle {padding:1.5rem 1.5rem 0;font-size:1.8rem;background:#f8f8f8;}
+    .bbsPassLayer {display:block;position:fixed;width:21rem;height:16.5rem;margin:-8rem 0 0 -12.5rem;padding:0 2rem;z-index:100;}
+    .bbsPassLayer:before {content:"";position:fixed;top:0;right:0;bottom:0;left:0;background:#000;opacity:.6;z-index:-1;}
+    .bbsPassLayer .bbsPassTit {padding:3rem 0 1.5rem;font-size:1.8rem;}
+    .bbsPassLayer .inpuTxt {width:18rem;}
+    .bbsPassLayer .btnWrap {margin-top:1rem;}
+
+    .bbsView .bbsViewTitle {padding:1.5rem 1.5rem 0;font-size:1.8rem;background:#f8f8f8;}
     .bbsView .bbsViewInfo {display:block;padding:.5rem 1.5rem 1.5rem;box-sizing:border-box;background:#f8f8f8;}
     .bbsView .bbsViewInfo dt,
     .bbsView .bbsViewInfo dd {display:inline-block;padding:0;border:0;line-height:1;font-size:1.2rem;}
@@ -217,6 +228,14 @@
     .bbsView .typeFile {background:none;}
     .bbsView .typeFile dt {display:none;}
     .bbsView .typeFile dd {line-height:1.5;}
+    
+    .bbsReply .bbsReplyTitle {margin:0 0 1.5rem;padding-left:1.8rem;font-size:1.5rem;}
+    .bbsReply .bbsReplyTitle:before {top:.2rem;width:.8rem;height:.8rem;}
+    .bbsReply .bbsReplyTitle span {font-size:1.5rem;}
+
+    .bbsReply .infoTable th {display:none;}
+    .bbsReply .infoTable td {border:0;}
+    .bbsReply .infoTable {border-bottom:1px solid #efefef;}
 
     .pagination {margin:3rem 0 0;letter-spacing:.2rem;}
     .pagination [class*="page"] {width:3rem;height:3rem;margin:0 1rem;}
@@ -228,4 +247,7 @@
     .pagination .paging strong {display:inline-block;margin:0;line-height:1;text-decoration:none;vertical-align:middle;}
     .pagination .paging button {display:none;}
     .pagingLength {display:inline-block;font-size:1.5rem;line-height:1;vertical-align:middle;}
+
+    /* btn */
+    .btnWrap {margin:3rem 0 0;}
 }
