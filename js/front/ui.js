@@ -16,9 +16,11 @@ function tabMenu(_this) {
 		var idx = $this.parent().index();
 		tabList.find('li').eq(idx).addClass('active').siblings().removeClass('active');
 		tabContent.eq(idx).show().siblings('.tabContent').hide();
-	})
-
-
+	});
+}
+function active(_this,className) {
+	var $this = _this;
+	$this.parent().addClass(className).siblings().removeClass(className);
 }
 function fontSize(w) {
 	if (w <= 560) {
@@ -55,6 +57,19 @@ $(function(){
 			txt = $this.parent().prev('input[type="text"]');
 			val = $this.val();
 		txt.val(val);
+	});
+	$('.snbNav button').on('click', function(){
+		var $this = $(this);
+		active($this,'open');
+	});
+	$('.breadcrumb .mob button').on('click', function(){
+		var $this = $(this);
+		$this.parent().toggleClass('active');
+	});
+	$('.tabMenu a').on('click', function(){
+		var $this = $(this);
+		active($this,'active');
+		return false;
 	});
 	
 	function getInternetVersion(ver) {

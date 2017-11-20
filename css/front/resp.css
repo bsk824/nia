@@ -88,8 +88,9 @@
     .breadcrumb .mob button {padding-right:1.2rem;color:#333;font-weight:bold;}
     .breadcrumb .mob button:after {content:"";display:inline-block;margin-left:.5rem;border:.4rem solid transparent;border-top:.5rem solid #333;border-bottom:0;vertical-align:middle;}
     
-    .breadcrumb .mob ul {display:none;position:absolute;top:3.4rem;left:0;padding:1rem 0;background:#fff;border:1px solid #e0e0e0;}
-    .breadcrumb .mob ul a {padding:0 1.5rem 0 1rem;white-space:nowrap;}
+    .breadcrumb .mob ul {display:none;position:absolute;top:3.4rem;left:0;padding:1rem 0;background:#fafafa;border:1px solid #e0e0e0;}
+    .breadcrumb .mob ul li + li {margin:1rem 0 0;}
+    .breadcrumb .mob ul a {padding:0 3rem 0 1rem;white-space:nowrap;}
     .breadcrumb .active ul {display:block;}
 
     #contents {padding-top:3.5rem;}

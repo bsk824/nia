@@ -50,12 +50,12 @@
 #snb .snbNav > ul > li > a {display:block;padding:14px 0 14px 20px;line-height:1;color:#626262;}
 #snb .snbNav > ul > li.active > a {background:url(../../images/front/img_snb_active_arrow.gif) no-repeat 90% 50%;color:#333;font-weight:bold;}
 #snb .snbNav button {position:relative;width:100%;padding:14px 0 14px 20px;line-height:1;color:#626262;text-align:left;}
-#snb .snbNav button:after {content:"";position:absolute;top:50%;right:18px;width:11px;height:8px;background:url(../../images/front/img_snb_sub_arrow.gif) no-repeat;}
+#snb .snbNav button:after {content:"";position:absolute;top:50%;right:18px;width:11px;height:8px;margin-top:-4px;background:url(../../images/front/img_snb_sub_arrow.gif) no-repeat;}
 #snb .snbNav > ul > li ul {display:none;padding:10px 0 10px 22px;background:#fafafa;border-top:1px solid #e0e0e0;}
 #snb .snbNav > ul > li li a {padding:0 0 0 7px;background:url(../../images/front/bul_snb_sub_dot.gif) no-repeat 0 50%;color:#626262;font-size:13px;}
 #snb .snbNav > ul > li li.active a {color:#bf91f3;}
-#snb .snbNav > ul > li.active ul {display:block;}
-#snb .snbNav > ul > li.active button:after {background-position:0 100%;}
+#snb .snbNav > ul > li.open ul {display:block;}
+#snb .snbNav > ul > li.open button:after {background-position:0 100%;}
 
 #contents {float:right;width:730px;padding:60px 0 0;outline:0 none;}
 
