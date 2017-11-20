@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+.greeting {font-size:16px;}
+.greeting .txt {color:#333;font-size:30px;line-height:1.3;}
+.greeting p + p {margin:35px 0 0;}
+.greeting .sign {color:#333;font-weight:bold;}
+.greeting .sign img {width:170px;margin-left:30px;}
+
+.mapWrap {height:320px;margin:0 0 15px;background:#fff;}
+.root_daum_roughmap, .wrap_map {width:100%!important;height:100%!important;}
+
+.progress:after {content:"";display:block;clear:both;}
+.progress li {position:relative;float:left;width:122px;height:47px;padding-top:75px;text-align:center;}
+.progress li + li {margin-left:30px;}
+.progress li + li:before {content:"";position:absolute;top:50%;left:-22px;width:14px;height:15px;margin-top:-7px;background:url(../../images/front/bg_progress_arrow.gif) no-repeat;}
+.progress li.step1 {background:url(../../images/front/img_progress01.gif) no-repeat;}
+.progress li.step2 {background:url(../../images/front/img_progress02.gif) no-repeat;}
+.progress li.step3 {background:url(../../images/front/img_progress03.gif) no-repeat;}
+.progress li.step4 {background:url(../../images/front/img_progress04.gif) no-repeat;}
+.progress li.step5 {background:url(../../images/front/img_progress05.gif) no-repeat;}
+
+.serviceLink:after {content:"";display:block;clear:both;}
+.serviceLink .boxType1 {float:left;width:300px;}
+.serviceLink .boxType1 + .boxType1 {float:right;}
+.serviceLink .linkTitle {margin:0 0 15px;color:#bf91f3;font-size:24px;line-height:1;}
+.serviceLink .linkTxt a {display:block;margin:35px 0 0;background:url(../../images/front/bg_service_link_arrow.png) no-repeat 0 50%;text-align:right;}

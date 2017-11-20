@@ -138,12 +138,15 @@
 .pageDesc {margin:-30px 0 40px;font-size:15px;color:#626262;}
 
 /* section */
-.subSection + .subSection {margin:55px 0 0;}
+.subSection ~ .subSection {margin:55px 0 0;}
 
 /* list */
 .bulDot > li,
 .bulDotTxt {padding-left:9px;background:url(../../images/front/bul_dot.gif) no-repeat 0 10px;font-size:16px;}
-.bulDot > li + li {margin-top:10px;}
+.bulDot > li + li {margin-top:5px;}
+
+.infoTable .bulDot > li,
+.infoTable .bulDotTxt {font-size:14px;background-position:0 8px;}
 
 .bulDash > li,
 .bulDashTxt {padding-left:6px;background:url(../../images/front/bul_dash.gif) no-repeat 0 8px;font-size:14px;}
@@ -154,8 +157,10 @@
 
 /* box */
 .boxType1 {padding:20px;background:#fafafa;border:4px solid #f2f2f2;}
+.boxType2 {padding:20px;background:#f6f8f8;border:1px solid #e1e5e6;}
 
 /* tabmenu */
+.tabMenu {margin:0 0 5rem;}
 .tabMenu:after {content:"";display:block;clear:both;}
 .tabMenu li {float:left;}
 .tabMenu li a {display:block;padding:19px 0;margin:0 -1px;background:#efefef;border:1px solid #dbdbdb;color:#4d4d4d;font-size:18px;line-height:1;text-align:center;font-weight:bold;}
@@ -170,6 +175,7 @@
 
 /* color */
 .fontColor1 {color:#bf91f3;}
+.fontColor2 {color:#ffc200;}
 
 /* table */
 .infoTable {border-top:1px solid #474e61;}
@@ -186,6 +192,11 @@
 .typeWrite td {padding:7px 9px;}
 .typeWrite .errorTxt {display:inline-block;margin:0 0 0 10px;color:#e95c5c;font-size:13px;}
 .typeWrite .tip {display:inline-block;margin:0 0 0 10px;padding:0 0 0 18px;background:url(../../images/front/icon_mark.gif) no-repeat 0 50%;font-size:13px;}
+.typeWrite textarea {width:100%;height:180px;}
+.typeWrite .sizeMax {width:100%;}
+.typeWrite .sizeHarf {width:40%;}
+.typeWrite .inputFile {width:60%;}
+.typeWrite .inputFile ~ .inputFile {margin-top:5px;}
 
 /* bbs */
 .bbsSearch {text-align:right;}
@@ -195,14 +206,14 @@
 .bbsSearch .inpuTxt .btnSearch {position:absolute;top:0;right:0;width:36px;height:28px;background:url(../../images/front/btn_search.gif) no-repeat;font:0/0 a;}
 
 .bbsSearch ~ .bbsList {margin:10px 0 0;}
-.bbsList {position:relative;border-bottom:1px solid #e3e3e3;}
+.bbsList {position:relative;border-top:1px solid #474e61;border-bottom:1px solid #e3e3e3;}
 .bbsList:before {content:"";display:block;height:44px;background:#fafafa;}
 .bbsList:after {content:"";position:absolute;top:0;right:0;left:0;height:44px;z-index:2;}
-.bbsList {border-top:1px solid #474e61;}
+.bbsList .searchNon {position:relative;margin-top:-44px;padding:50px 0;background:#fff;text-align:center;}
 .bbsList li {border-top:1px solid #e3e3e3;}
 .bbsList li a {display:table;width:100%;padding:10px 0;table-layout:fixed;}
 .bbsList li a:hover {background:#f9fbff;}
-.bbsList li a > span {display:table-cell;position:relative;text-align:center;}
+.bbsList li a > span {display:table-cell;position:relative;text-align:center;vertical-align:middle;}
 .bbsList li a > span:before {display:none;content:"";position:absolute;top:-43px;right:0;left:0;color:#444;}
 .bbsList li:first-child a > span:before {display:inline;}
 .bbsList li a > span.subject {padding-left:10px;text-align:left;}
@@ -210,15 +221,19 @@
 .bbsList [class*="bbsIcon"] {display:inline-block;margin-left:5px;font:0/0 a;vertical-align:middle;}
 .bbsList .bbsIconNew {width:15px;height:15px;background:url(../../images/front/icon_new.png) no-repeat;}
 .bbsList .bbsIconFile {width:13px;height:15px;background:url(../../images/front/icon_file.png) no-repeat;}
+.bbsList li a > span.status > span {display:inline-block;width:74px;height:19px;padding:6px 0 0;line-height:1;background:#ededed;color:#444;border-radius:11px;text-align:center;}
+.bbsList li a > span.status > span.com {background:#d1b2f6;}
 .bbsList li a > span.no:before {content:"NO";}
-.bbsList li a > span.subject:before {content:"제목";padding-left:80px;}
+.bbsList li a > span.sort:before {content:"분류";}
+.bbsList li a > span.subject:before {content:"제목";text-align:center;}
+.bbsList li a > span.status:before {content:"상태";}
+.bbsList li a > span.writer:before {content:"작성자";}
 .bbsList li a > span.date:before {content:"작성일";}
 .bbsList li a > span.view:before {content:"조회";}
 
-.bbsPassLayer {display:none;position:absolute;top:50%;left:50%;width:210px;height:165px;margin:-80px 0 0 -125px;padding:0 20px;background:#fff;border:1px solid #787878;text-align:center;}
-.bbsPassLayer .bbsPassTit {display:block;padding:30px 0 15px;color:#222;font-size:18px;line-height:1;}
-.bbsPassLayer .inpuTxt {width:180px;text-align:center;}
-.bbsPassLayer .btnWrap {margin-top:10px;}
+.bbsList li a > span.sort,
+.bbsList li a > span.date,
+.bbsList li a > span.view {color:#999;}
 
 .bbsView {border-top:1px solid #474e61;border-bottom:1px solid #e8e8e8;}
 .bbsView .bbsViewTitle {padding:15px 0 15px 18px;font-size:18px;}
@@ -249,6 +264,15 @@
 .pagination .paging button {height:30px;margin:0 6px;vertical-align:middle;}
 .pagingLength {display:none;}
 
+/* layer */
+.layerPop {display:none;position:fixed;top:0;right:0;bottom:0;left:0;}
+.layerPop:after {content:"";position:fixed;top:0;right:0;bottom:0;left:0;}
+
+.bbsPassLayer .layerPopInner {position:absolute;top:50%;left:50%;width:210px;height:165px;margin:-80px 0 0 -125px;padding:0 20px;background:#fff;border:1px solid #787878;text-align:center;z-index:2;}
+.bbsPassLayer .bbsPassTit {display:block;padding:30px 0 15px;color:#222;font-size:18px;line-height:1;}
+.bbsPassLayer .inpuTxt {width:180px;text-align:center;}
+.bbsPassLayer .btnWrap {margin-top:10px;}
+
 /* btn */
 .btnWrap {margin:30px 0 0;text-align:center;}
 .btnWrap:after {content:"";display:block;clear:both;}
@@ -258,3 +282,9 @@
 [class*="btnType"] {display:inline-block;padding:5px 18px 4px;font-size:13px;vertical-align:middle;}
 .btnType1 {border:1px solid #747474;color:#444;}
 .btnType2 {border:1px solid #bf91f3;background:#bf91f3;color:#222;}
+
+.pagination + .btnWrap {margin:-33px 0 0;}
+
+/* margin */
+.contMg {margin-top:10px;}
+.contSubMg {margin:10px 0 0 25px;}

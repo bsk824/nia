@@ -179,6 +179,7 @@
     .tipTxt {margin-top:1.2rem;font-size:1.1rem;}
     
     /* table */
+    .infoTable {margin:1rem 0 0;}
     .infoTable th,
     .infoTable td {padding:1rem .5rem;font-size:1.2rem;}
     .typeWrite colgroup {display:none;}

@@ -8,6 +8,7 @@
 <meta name="format-detection" content="telephone=no">
 <link rel="stylesheet" type="text/css" href="../css/front/default.css">
 <link rel="stylesheet" type="text/css" href="../css/front/common.css">
+<link rel="stylesheet" type="text/css" href="../css/front/contents.css">
 <link rel="stylesheet" type="text/css" href="../css/front/resp.css" media="all and (max-width:999px)">
 <script type="text/javascript" src="../js/front/jquery-1.11.1.min.js"></script>
 <script type="text/javascript" src="../js/front/ui.js"></script>
@@ -52,9 +53,9 @@
 	<div class="mob">
 		<button type="button">감리사 소개</button>
 		<ul>
-			<li><a href="info01.html">기관장 인사말</a></li>
-			<li><a href="info02.html">감리사 소개</a></li>
-			<li><a href="info03.html">찾아오시는 길</a></li>
+			<li><a href="intro01.html">기관장 인사말</a></li>
+			<li><a href="intro02.html">감리사 소개</a></li>
+			<li><a href="intro03.html">찾아오시는 길</a></li>
 		</ul>
 	</div>
 </div>
@@ -213,17 +214,21 @@
 				</span>
 			</fieldset>
 			<div class="bbsList">
+				<!-- 반응형이기 때문에 colgroup 에 너비 넣듯이 인라인 스타일로 너비를 잡아줘야 합니다. -->
 				<style>
 				.bbsList .no {width:60px;}
 				.bbsList .date {width:110px;}
 				.bbsList .view {width:80px;}
 				</style>
 				<ul>
+					<li class="searchNon">
+						검색 결과가 없습니다.
+					</li>
 					<li>
 						<a href="#">
 							<span class="no">10</span>
 							<span class="subject">
-								<span class="txt">제 17회 정보시스템감리사 최종 합격자 명단/정보시스템감리사 최종 합격자 명단제 17회 정보시스템감리사 최종 합격자 명단/정보시스템감리사 최종 합격자 명단</span>
+								<span class="txt">제 17회 정보시스템<b>감리사</b> 최종 합격자 명단</span> <!-- 검색결과 단어 볼드 -->
 								<span class="bbsIconNew">새 글</span>
 							</span>
 							<span class="date">2017.08.19</span>
@@ -265,16 +270,22 @@
 						</a>
 					</li>
 				</ul>
+				
+				<!-- 비밀번호 입력 레이어 -->
 				<div class="layerPop bbsPassLayer">
-					<label for="bbsPass" class="bbsPassTit">비밀번호</label>
-					<input type="password" id="bbsPass" class="inpuTxt">
-					<div class="btnWrap">
-						<span>
-							<a href="#" class="btnType2">등록</a>
-						</span>
+					<div class="layerPopInner">
+						<label for="bbsPass" class="bbsPassTit">비밀번호</label>
+						<input type="password" id="bbsPass" class="inpuTxt">
+						<div class="btnWrap">
+							<span>
+								<a href="#" class="btnType2">입력</a>
+								<a href="#" class="btnType1">취소</a>
+							</span>
+						</div>
 					</div>
-
 				</div>
+				<!-- //비밀번호 입력 레이어 -->
+				
 			</div>
 			<div class="pagination">
 				<button type="button" class="pageStart">처음으로</button>
@@ -294,12 +305,18 @@
 				<button type="button" class="pageNext">다음</button>
 				<button type="button" class="pageEnd">끝으로</button>
 			</div>
+			<div class="btnWrap">
+				<span class="btnRight">
+					<a href="#" class="btnType2">수정</a>
+					<a href="#" class="btnType1">목록</a>
+				</span>
+			</div>
 		</div>
 		
 		<div class="subSection">
 			<h2 class="subTitle">게시판 보기</h2>
 			<div class="bbsView">
-				<h3 class="bbsViewTitle">2017년(제 18회) 정보 시스템 감리사 자격 검정 시행공고</h3>
+				<h3 class="bbsViewTitle"><b>[경력증빙 서류]</b> 2017년(제 18회) 정보 시스템 감리사 자격 검정 시행공고2017년(제 18회) 정보 시스템 감리사 자격 검정 시행공고</h3> <!-- 타이틀에 분류가 들어갈 경우 볼드 처리 -->
 				<dl class="bbsViewInfo">
 					<dt>작성일</dt>
 					<dd>2017.09.25</dd>
@@ -380,26 +397,42 @@
 						<tr>
 							<th scope="row">제목</th>
 							<td>
-								<input type="text" class="inpuTxt" title="제목 입력">
+								<input type="text" class="inpuTxt sizeMax" title="제목 입력">
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">작성자</th>
+							<td>
+								<input type="text" class="inpuTxt sizeHarf" title="작성자 이름 입력">
 							</td>
 						</tr>
 						<tr>
 							<th scope="row">비밀번호</th>
 							<td>
-								<input type="password" class="inpuTxt" title="비밀번호 입력">
-								<span class="tip">숫자,영문,특수문자를 포함하여 6자리 이상 조합).</span>
+								<input type="password" class="inpuTxt sizeHarf" title="비밀번호 입력">
+								<span class="tip">숫자,영문,특수문자를 포함하여 6자리 이상 조합)</span>
 							</td>
 						</tr>
 						<tr>
 							<th scope="row">비밀번호 확인</th>
 							<td>
-								<input type="password" class="inpuTxt" title="비밀번호 확인 재입력">
+								<input type="password" class="inpuTxt sizeHarf" title="비밀번호 확인 재입력">
 								<span class="errorTxt">비밀번호가 일치하지 않습니다.</span>
 							</td>
 						</tr>
 						<tr>
-							<th scope="row">제목</th>
+							<th scope="row">내용</th>
 							<td>
+								<textarea name="" id="" cols="30" rows="10"></textarea>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">파일첨부</th>
+							<td>
+								<span class="inputFile">
+									<input type="text" class="inpuTxt" title="첨부파일명" readonly="readonly">
+									<label class="btnType1">파일첨부 <input type="file" title="파일첨부"></label>
+								</span>
 								<span class="inputFile">
 									<input type="text" class="inpuTxt" title="첨부파일명" readonly="readonly">
 									<label class="btnType1">파일첨부 <input type="file" title="파일첨부"></label>
