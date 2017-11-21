@@ -31,5 +31,3 @@
 .receiveSection + .infoTable {margin-top:-1px;border-top:1px solid #e3e3e3;}
 .receivePicture .picture {display:block;width:142px;height:168px;margin:0 0 10px;border:1px solid #e3e3e3;}
 .receivePicture .picture img {width:100%;height:100%;}
-
-.address {}
