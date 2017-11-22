@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-<title>응시원서 접수 - 정보시스템감리사</title>
+<title>전형료 납부 확인 - 정보시스템감리사</title>
 <meta charset="utf-8">
 <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=yes, target-densitydpi=medium-dpi" name="viewport">
 <meta http-equiv="X-UA-Compatible" content="IE=Edge">
@@ -48,32 +48,27 @@
     <p class="breadcrumbInner">
         <a href="/" class="home">홈</a>
         <span>자격검정 서비스</span>
-        <span>응시원서 접수</span>
-        <strong class="current">비밀번호 찾기</strong>
+        <span>접수 및 납부확인</span>
+        <strong class="current">전형료 납부 확인</strong>
     </p>
 	<div class="mob">
-        <button type="button">비밀번호 찾기</button>
-        <ul>
-            <li><a href="service01.html">응시원서 접수</a></li>
-            <li><a href="service02_01.html">접수 및 납부확인</a></li>
-            <li><a href="service03.html">수험표 출력</a></li>
-            <li><a href="service04_01.html">가답안 및 확정답안</a></li>
-            <li><a href="service05_01.html">성적 확인</a></li>
-            <li><a href="service06.html">설문조사</a></li>
-            <li><a href="service07_01.html">자격증 조회</a></li>
-        </ul>
-    </div>
+		<button type="button">전형료 납부 확인</button>
+		<ul>
+			<li><a href="service02_01.html">응시원서 접수 확인</a></li>
+			<li><a href="service02_02.html">전형료 납부 확인</a></li>
+		</ul>
+	</div>
 </div>
 <div id="container">
     <div id="snb" tabindex="0">
         <h2 class="cateTitle">자격검정 서비스</h2>
         <nav class="snbNav">
             <ul>
-                <li class="active"><a href="service01.html">응시원서 접수</a></li>
-                <li><button type="button">접수 및 납부확인</button>
+                <li><a href="service01.html">응시원서 접수</a></li>
+                <li class="open"><button type="button">접수 및 납부확인</button>
                     <ul>
                         <li><a href="service02_01.html">응시원서 접수 확인</a></li>
-                        <li><a href="service02_02.html">전형료 납부 확인</a></li>
+                        <li class="active"><a href="service02_02.html">전형료 납부 확인</a></li>
                     </ul>
                 </li>
                 <li><a href="service03.html">수험표 출력</a></li>
@@ -95,38 +90,78 @@
                         <li><a href="service07_01.html">자격증 보기</a></li>
                         <li><a href="service07_01.html">자격증 신청</a></li>
                     </ul>
-                </li>   
+                </li>
+                        
             </ul>
         </nav>
     </div>
 	<section id="contents" tabindex="0">
-        <h1 class="pageTitle">응시원서 접수</h1>
-        <div class="subSection">
-            <h2 class="subTitle">실명확인</h2>
-            <div class="boxType1 iconBox">
-                <p class="iconTxt03 fontColor1">실명확인이 필요합니다.</p>
-                <p class="txtCenter">이름과 주민번호, 접수 비밀번호를 입력하셔서 실명인증 절차를 진행해 주시기 바랍니다.</p>
-                <fieldset class="inputWrap">
-                    <legend>실명 확인 정보 입력</legend>
-                    <p>
-                        <input type="text" class="inpuTxt" title="성명 입력" placeholder="성명">
-                    </p>
-                    <p class="juminCell">
-                        <span><input type="text" class="inpuTxt" title="주민등록번호 앞자리 입력" placeholder="주민번호"></span>
-                        <span class="sym">-</span>
-                        <span><input type="password" class="inpuTxt" title="주민등록번호 뒷자리 입력"></span>
-                    </p>
-                    <P>
-                        <input type="password" class="inpuTxt" title="접수 비밀번호 입력" placeholder="접수 비밀번호">
-                    </P>
-                    <div class="btnWrap">
-                        <button class="btnType3">확인</button>
-                        <a href="#" class="btnType1">비밀번호 찾기</a>
-                    </div>
-                </fieldset>
-            </div>
-            <p class="contMg">※ 개인정보 수집 안내 : 성명 및 주민등록번호는 실명확인을 위해서만 사용됩니다. 주민등록번호는 수집하지 않습니다. </p>
+        <h1 class="pageTitle">전형료 납부 확인</h1>
+
+        <div class="infoTable">
+            <table>
+                <caption>현금영수증 처리 안내 정보 테이블</caption>
+                <colgroup>
+                    <col style="width:145px;">
+                    <col>
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <th scope="row">현금영수증 처리 안내</th>
+                        <td>
+                            <ul class="bulDot">
+                                <li>환불신청은 필기시험일 이후에 처리됩니다.</li>
+                                <li>100% 환불 : 2018.05.01. 00:00:00 ~ 2018.05.10. 23:59:59</li>
+                                <li>50% 환불 : 2018.05.11. 00:00:00 ~ 2018.05.25. 23:59:59</li>
+                                <li>이후 기간 환불 불가</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
+
+        <div class="infoTable typeWrite">
+            <table>
+                <caption>현금영수증 신청 입력 테이블</caption>
+                <colgroup>
+                    <col style="width:145px;">
+                    <col style="width:220px;">
+                    <col style="width:145px;">
+                    <col>
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <th scope="row">성명</th>
+                        <td>정주헌</td>
+                        <th scope="row">생년월일</th>
+                        <td>86.07.19</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">환불사유</th>
+                        <td colspan="3"><input type="text" class="inpuTxt sizeMax" title="환불사유 입력"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" rowspan="2">환불 계좌번호</th>
+                        <th scope="col" class="center">은행명</th>
+                        <th scope="col" class="center">계좌번호</th>
+                        <th scope="col" class="center">예금주</th>
+                    </tr>
+                    <tr>
+                        <td class="line"><input type="text" class="inpuTxt sizeMax" title="은행명 입력"></td>
+                        <td><input type="text" class="inpuTxt sizeMax" title="계좌번호 입력"></td>
+                        <td><input type="text" class="inpuTxt sizeMax" title="예금주 입력"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="btnWrap">
+            <span class="btnRight">
+                <a href="#" class="btnType3">신청</a>
+                <a href="service02_02.html" class="btnType1">돌아가기</a>
+            </span>
+        </div>
+        
 	</section>
 </div>
 <footer id="footer">

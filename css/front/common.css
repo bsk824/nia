@@ -220,9 +220,10 @@
 .infoTable thead th {border-bottom:1px solid #e3e3e3;}
 .infoTable tbody th {padding-left:20px;text-align:left;}
 .infoTable table .line {border-left:1px solid #e3e3e3;}
-.infoTable table .center {text-align:center;} 
+.infoTable table .center {padding:10px;text-align:center;} 
 .infoTable table .left {text-align:left;}
-.typeWrite + .typeWrite {margin-top:30px;}
+.btnWrap + .infoTable {margin-top:10px;}
+.infoTable + .infoTable {margin-top:30px;}
 .typeWrite td {padding:7px 9px;}
 .typeWrite .errorTxt {display:inline-block;margin:0 0 0 10px;color:#e95c5c;font-size:13px;}
 .typeWrite .tip {display:inline-block;margin:0 0 0 10px;padding:0 0 0 18px;background:url(../../images/front/icon_mark.gif) no-repeat 0 50%;font-size:13px;}
