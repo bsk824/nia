@@ -19,11 +19,13 @@
 .progress li.step4 {background:url(../../images/front/img_progress04.gif) no-repeat;}
 .progress li.step5 {background:url(../../images/front/img_progress05.gif) no-repeat;}
 
-.serviceLink:after {content:"";display:block;clear:both;}
-.serviceLink .boxType1 {float:left;width:300px;}
-.serviceLink .boxType1 + .boxType1 {float:right;}
-.serviceLink .linkTitle {margin:0 0 15px;color:#bf91f3;font-size:24px;line-height:1;}
-.serviceLink .linkTxt a {display:block;margin:35px 0 0;background:url(../../images/front/bg_service_link_arrow.png) no-repeat 0 50%;text-align:right;}
+.serviceLink {position:relative;}
+.serviceLink .linkTitle {margin:0 0 10px;color:#444;font-size:20px;line-height:1;}
+.serviceLink .linkTxt {padding:0 0 50px;background:url(../../images/front/bg_service_link_arrow.png) no-repeat 0 100%;}
+.serviceLink .linkBtn {position:absolute;top:50%;right:20px;margin-top:-51px;}
+.serviceLink .linkBtn a {display:inline-block;width:102px;height:102px;margin-left:20px;background:#fdc000;color:#222;border-radius:50%;font-size:16px;line-height:1.2;text-align:center;}
+.serviceLink .linkBtn a span {display:inline-block;vertical-align:middle;}
+.serviceLink .linkBtn a:before {content:"";display:inline-block;height:100%;vertical-align:middle;}
 
 .receiveSection {position:relative;padding-left:204px;border-top:1px solid #474e61;}
 .receiveSection .receivePicture {position:absolute;top:30px;left:30px;text-align:center;}
@@ -31,3 +33,12 @@
 .receiveSection + .infoTable {margin-top:-1px;border-top:1px solid #e3e3e3;}
 .receivePicture .picture {display:block;width:142px;height:168px;margin:0 0 10px;border:1px solid #e3e3e3;}
 .receivePicture .picture img {width:100%;height:100%;}
+
+.inputWrap {width:295px;margin:30px auto 0;}
+.inputWrap p + p {margin-top:5px;}
+.inputWrap .inpuTxt {width:100%;height:45px;font-size:16px;}
+.inputWrap .juminCell span {display:inline-block;width:140px;}
+.inputWrap .juminCell span.sym {width:10px;text-align:center;}
+.inputWrap .btnWrap {margin:10px 0 0;}
+.inputWrap .btnWrap [class*="btnType"] {width:100%;height:45px;margin:5px 0 0;font-size:16px;}
+.inputWrap .btnWrap a[class*="btnType"] {padding-top:10px;}

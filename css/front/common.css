@@ -174,6 +174,8 @@
 .bulDash > li,
 .bulDashTxt {padding-left:6px;background:url(../../images/front/bul_dash.gif) no-repeat 0 8px;font-size:14px;}
 
+.bulDotTxt + .bulDash {margin:5px 0 0 9px;}
+
 .numList li {position:relative;padding-left:18px;font-size:16px;}
 .numList li .num {position:absolute;top:0;left:0;color:#bf91f3;}
 .numList li + li {margin:5px 0 0;}
@@ -181,6 +183,7 @@
 /* box */
 .boxType1 {padding:20px;background:#fafafa;border:4px solid #f2f2f2;}
 .boxType2 {padding:20px;background:#f6f8f8;border:1px solid #e1e5e6;}
+.iconBox {padding:50px 20px;}
 
 /* tabmenu */
 .tabMenu {margin:0 0 5rem;}
@@ -195,11 +198,13 @@
 
 /* txt */
 .tipTxt {margin-top:15px;text-align:right;font-size:13px;}
-[class*="iconTxt"] {padding:180px 0 30px;color:#222;font-size:20px;text-align:center;}
+.txtCenter {margin-top:15px;text-align:center;}
+[class*="iconTxt"] {padding:135px 0 0;color:#222;font-size:20px;text-align:center;}
 [class*="iconTxt"] [class*="btnType"] {margin:30px 0 0;}
-.iconTxt01 {background:url(../../images/front/bg_icon01.png) no-repeat 50% 30px;}
-.iconTxt02 {background:url(../../images/front/bg_icon02.png) no-repeat 50% 30px;}
-.iconTxt03 {background:url(../../images/front/bg_icon03.png) no-repeat 50% 30px;}
+.iconTxt01 {background:url(../../images/front/bg_icon01.png) no-repeat 50% 0;}
+.iconTxt02 {background:url(../../images/front/bg_icon02.png) no-repeat 50% 0;}
+.iconTxt03 {background:url(../../images/front/bg_icon03.png) no-repeat 50% 0;}
+.iconTxt04 {background:url(../../images/front/bg_icon04.png) no-repeat 50% 0;}
 
 /* color */
 .fontColor1 {color:#bf91f3;}
@@ -322,7 +327,8 @@
 
 [class*="btnType"] {display:inline-block;padding:4px 19px;font-size:13px;vertical-align:middle;box-sizing:border-box;}
 .btnType1 {border:1px solid #747474;background:#fff;color:#444;}
-.btnType2 {border:1px solid #bf91f3;background:#bf91f3;color:#222;}
+.btnType2 {border:1px solid #d8b29d;background:#d8b29d;color:#222;}
+.btnType3 {border:1px solid #bf91f3;background:#bf91f3;color:#222;}
 
 .pagination + .btnWrap {margin:-33px 0 0;}
 

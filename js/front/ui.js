@@ -52,24 +52,49 @@ function setCookie(cname, cvalue, exdays) {
 	document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
 }
 $(function(){
-	$('.inputFile input[type="file"]').on('change', function() {
+	var gnb = $('#header .gnb'),
+		inputFile = $('.inputFile input[type="file"]'),
+		gnbMenu = $('.allMenu > ul > li > a'),
+		snbMenu = $('.snbNav button'),
+		breadcrumbMobMenu = $('.breadcrumb .mob button'),
+		tabMenu = $('.tabMenu a'),
+		btnAllMenu = $('#header .btnMenu'),
+		btnGnbClose = $('#header .closeMenu');
+	
+	inputFile.on('change', function() {
 		var $this = $(this),
 			txt = $this.parent().prev('input[type="text"]');
 			val = $this.val();
 		txt.val(val);
 	});
 
-	$('.snbNav button').on('click', function(){
+	gnbMenu.on('mouseenter focus',function(){
+		gnb.addClass('menuOn');
+	});
+	gnbMenu.on('click',function(){
+		var $this = $(this);
+		active($this,'active');
+		return false;
+	});
+	btnAllMenu.on('click',function(){
+		gnb.addClass('menuOn');
+	});
+	btnGnbClose.on('click', function(){
+		gnb.removeClass('menuOn');
+	});
+
+	snbMenu.on('click', function(){
 		var $this = $(this);
 		active($this,'open');
 	});
 
-	$('.breadcrumb .mob button').on('click', function(){
+	breadcrumbMobMenu.on('click', function(){
 		var $this = $(this);
 		$this.parent().toggleClass('active');
 	});
 	
-	$('.tabMenu a').on('click', function(){
+	
+	tabMenu.on('click', function(){
 		var $this = $(this);
 		active($this,'active');
 		return false;

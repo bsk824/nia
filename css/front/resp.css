@@ -286,11 +286,12 @@
     .pagination .pageNext {background:url(../../images/front/mobile/btn_pagination_next.gif) no-repeat;background-size:cover;}
     .pagination .pageStart,
     .pagination .pageEnd {display:none;}
-    .pagination .paging {margin:0;font-size:1.5rem;vertical-align:middle;}
+    .pagination .paging {margin:0;font-size:1.5rem;line-height:1;vertical-align:middle;}
     .pagination .paging strong {display:inline-block;margin:0;line-height:1;text-decoration:none;vertical-align:middle;}
     .pagination .paging button {display:none;}
     .pagingLength {display:inline-block;font-size:1.5rem;line-height:1;vertical-align:middle;}
 
     /* btn */
     .btnWrap {margin:3rem 0 0;}
+    .pagination + .btnWrap {margin:1.5rem 0 0;}
 }
