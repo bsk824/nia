@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-<title>전형료 납부 확인 - 정보시스템감리사</title>
+<title>수험표 출력 - 정보시스템감리사</title>
 <meta charset="utf-8">
 <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=yes, target-densitydpi=medium-dpi" name="viewport">
 <meta http-equiv="X-UA-Compatible" content="IE=Edge">
@@ -48,16 +48,20 @@
     <p class="breadcrumbInner">
         <a href="/" class="home">홈</a>
         <span>자격검정 서비스</span>
-        <span>접수 및 납부확인</span>
-        <strong class="current">전형료 납부 확인</strong>
+        <strong class="current">수험표 출력</strong>
     </p>
 	<div class="mob">
-		<button type="button">전형료 납부 확인</button>
-		<ul>
-			<li><a href="service02_01.html">응시원서 접수 확인</a></li>
-			<li><a href="service02_02.html">전형료 납부 확인</a></li>
-		</ul>
-	</div>
+        <button type="button">수험표 출력</button>
+        <ul>
+            <li><a href="service01.html">응시원서 접수</a></li>
+            <li><a href="service02_01.html">접수 및 납부확인</a></li>
+            <li><a href="service03.html">수험표 출력</a></li>
+            <li><a href="service04_01.html">가답안 및 확정답안</a></li>
+            <li><a href="service05_01.html">성적 확인</a></li>
+            <li><a href="service06.html">설문조사</a></li>
+            <li><a href="service07_01.html">자격증 조회</a></li>
+        </ul>
+    </div>
 </div>
 <div id="container">
     <div id="snb" tabindex="0">
@@ -65,13 +69,13 @@
         <nav class="snbNav">
             <ul>
                 <li><a href="service01.html">응시원서 접수</a></li>
-                <li class="open"><button type="button">접수 및 납부확인</button>
+                <li><button type="button">접수 및 납부확인</button>
                     <ul>
                         <li><a href="service02_01.html">응시원서 접수 확인</a></li>
-                        <li class="active"><a href="service02_02.html">전형료 납부 확인</a></li>
+                        <li><a href="service02_02.html">전형료 납부 확인</a></li>
                     </ul>
                 </li>
-                <li><a href="service03.html">수험표 출력</a></li>
+                <li class="active"><a href="service03.html">수험표 출력</a></li>
                 <li><button type="button">가답안 및 확정답안</button>
                     <ul>
                         <li><a href="service04_01.html">가답안</a></li>
@@ -96,89 +100,19 @@
         </nav>
     </div>
 	<section id="contents" tabindex="0">
-        <h1 class="pageTitle">전형료 납부 확인</h1>
-        <div class="btnWrap">
-            <span class="btnRight">
-                <a href="service02_02_01.html" class="btnType3">현금영수증 신청</a>
-                <a href="service02_02_02.html" class="btnType1">환불신청</a>
-                <a href="service02_02_01.html" class="btnType3 disabled">현금영수증 신청</a>
-                <a href="service02_02_02.html" class="btnType1 disabled">환불신청</a>
-            </span>
-        </div>
-
-        <div class="infoTable">
-            <table>
-                <caption>전형료 납부 정보 테이블</caption>
-                <colgroup>
-                    <col style="width:145px;">
-                    <col style="width:220px;">
-                    <col style="width:145px;">
-                    <col>
-                </colgroup>
-                <tbody>
-                    <tr>
-                        <th scope="row">회차</th>
-                        <td>19</td>
-                        <th scope="row">수험번호</th>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <th scope="row">성명</th>
-                        <td>정주헌</td>
-                        <th scope="row">생년월일</th>
-                        <td>86.07.19</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">현금영수증 신청</th>
-                        <td>N</td>
-                        <th scope="row">현금영수증 신청일</th>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <th scope="row">환불신청</th>
-                        <td>N</td>
-                        <th scope="row">환불신청 신청일</th>
-                        <td></td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-
-        <div class="infoTable">
-            <table>
-                <caption>전형료 납부 정보 테이블</caption>
-                <colgroup>
-                    <col style="width:145px;">
-                    <col style="width:220px;">
-                    <col style="width:145px;">
-                    <col>
-                </colgroup>
-                <tbody>
-                    <tr>
-                        <th scope="row">상태</th>
-                        <td><b class="fontColor1">미납</b></td>
-                        <th scope="row">납부확인일</th>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <th scope="row" rowspan="2">단계확인</th>
-                        <td colspan="3">필기전형료 납부 단계</td>
-                    </tr>
-                    <tr>
-                        <td colspan="3" class="line">
-                            필기전형료 납부 (필기전형료를 응시원서 마감일 이전까지 납부하셔야 필기시험을 보실 수 있습니다.)
-                            <ul class="bulDash">
-                                <li>필기전형료 : 135,000원</li>
-                                <li>입금계좌 : 신한은행 100―029―673804</li>
-                                <li>예금주 : 한국정보화진흥원<br>
-                                    ※ 무통장 입금 또는 계좌이체만 가능하며 응시자 본인의 이름으로 입금 요망(신용카드 결제 불가능)<br>
-                                    ※ 납부 확인은 입금일 다음날 가능.
-                                </li>
-                            </ul>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+        <h1 class="pageTitle">수험표 출력</h1>
+        
+        <div class="subSection">
+            <h2 class="subTitle">회차 선택</h2>
+            <div class="boxType1 serviceLink">
+                <h3 class="linkTitle">2018년(제 19회) 정보시스템 감리사 자격검정</h3>
+                <p class="linkTxt">
+                    정보시스템 감리사 자격검정 수험표 출력 및 조회하실 수 있습니다.
+                </p>
+                <div class="linkBtn">
+                    <a href="#"><span>출력하기</span></a>
+                </div>
+            </div>
         </div>
         
 	</section>

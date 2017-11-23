@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-<title>응시원서 접수 - 정보시스템감리사</title>
+<title>수험표 출력 - 정보시스템감리사</title>
 <meta charset="utf-8">
 <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=yes, target-densitydpi=medium-dpi" name="viewport">
 <meta http-equiv="X-UA-Compatible" content="IE=Edge">
@@ -48,11 +48,10 @@
     <p class="breadcrumbInner">
         <a href="/" class="home">홈</a>
         <span>자격검정 서비스</span>
-        <span>응시원서 접수</span>
-        <strong class="current">비밀번호 찾기</strong>
+        <strong class="current">수험표 출력</strong>
     </p>
 	<div class="mob">
-        <button type="button">비밀번호 찾기</button>
+        <button type="button">수험표 출력</button>
         <ul>
             <li><a href="service01.html">응시원서 접수</a></li>
             <li><a href="service02_01.html">접수 및 납부확인</a></li>
@@ -69,14 +68,14 @@
         <h2 class="cateTitle">자격검정 서비스</h2>
         <nav class="snbNav">
             <ul>
-                <li class="active"><a href="service01.html">응시원서 접수</a></li>
+                <li><a href="service01.html">응시원서 접수</a></li>
                 <li><button type="button">접수 및 납부확인</button>
                     <ul>
                         <li><a href="service02_01.html">응시원서 접수 확인</a></li>
                         <li><a href="service02_02.html">전형료 납부 확인</a></li>
                     </ul>
                 </li>
-                <li><a href="service03.html">수험표 출력</a></li>
+                <li class="active"><a href="service03.html">수험표 출력</a></li>
                 <li><button type="button">가답안 및 확정답안</button>
                     <ul>
                         <li><a href="service04_01.html">가답안</a></li>
@@ -95,23 +94,87 @@
                         <li><a href="service07_01.html">자격증 보기</a></li>
                         <li><a href="service07_01.html">자격증 신청</a></li>
                     </ul>
-                </li>   
+                </li>
+                        
             </ul>
         </nav>
     </div>
 	<section id="contents" tabindex="0">
-        <h1 class="pageTitle">응시원서 접수</h1>
-        <div class="subSection">
-            <h2 class="subTitle">응시원서 접수 완료</h2>
-            <div class="boxType1 iconBox">
-                <p class="iconTxt04 fontColor1">응시 원서가 접수되었습니다.</p>
-                <p class="txtCenter">제 19회차 정보시스템 감리사 필기시험에 접수되었습니다.<br>
-                    필기전형료 납부기간은 (<b class="fontColor1">2018-05-10 ~ 2018-05-20</b>)입니다.</p>
-                <div class="btnWrap">
-                    <a href="#" class="btnType1">메인으로</a>
+        <h1 class="pageTitle">수험표 출력</h1>
+        <div class="btnWrap">
+            <span class="btnRight">
+                <button type="button" class="btnType3">수험표 출력</button>
+            </span>
+        </div>
+
+        <div class="printSection ticketPrint">
+            <h1 class="title">2017년도 제18회 정보시스템 감리사 수험표</h1>
+            <div class="subSection receiveSection">
+                <div class="receivePicture">
+                    <span class="picture"><img src="../images/front/img_sample_picture.jpg" alt="사진 샘플"></span>
+                </div>
+                <div class="infoTable typeWrite">
+                    <table>
+                        <caption>응시원서 입력 테이블</caption>
+                        <colgroup>
+                            <col style="width:145px;">
+                            <col>
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th scope="row">수험번호</th>
+                                <td>20179625</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">성명</th>
+                                <td>정주헌</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">생년월일</th>
+                                <td>86.07.19</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">시험일시</th>
+                                <td><b>2017년 06월 17일 14:00~16:30</b></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">시험장소</th>
+                                <td>
+                                    <b>한양공업고등학교</b><br>
+                                    주소 : 서울 중구 을지로299
+                                    <ul class="bulDash">
+                                        <li>지하철 : 동대문역사문화공원역(2,4,5호선) 2번 출구</li>
+                                        <li>주차가 불가하오니 대중교통을 이용하시기 바랍니다.</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
+            <p class="ticketSign">
+                상기자는 2017년도 제18회 정보시스템 감리사 자격시험에 접수하였음을 확인합니다.<br>
+                <img src="../images/front/img_sign2.gif" alt="한국정보화진흥원장 인">
+            </p>
+            
+            <div class="boxType2">
+                <h2 class="bulDotTxt fontColor3">수험자 유의사항</h2>
+                <ul class="numList contMg">
+                    <li><span class="num">1.</span> 준비물 : 수험표, 신분증(주민등록증, 운전면허증, 여권 중 1개), 답안지 작성용 필기도구(컴퓨터용 싸인펜) 
+                        <ul class="bulDash">
+                            <li>필기전형 당일 신분증 미지참자는 시험에 응시할 수 없습니다.</li>
+                            <li>계산기는 지참할 수 없습니다.</li>
+                        </ul>
+                    </li>
+                    <li><span class="num">2.</span> 수험자별 고사실은 당일 시험장에서 확인할 수 있습니다.</li>
+                    <li><span class="num">3.</span> 신분증, 필기도구, 시계를 제외한 모든 소지품은 교실 앞으로 제출여야 합니다.</li>
+                    <li><span class="num">4.</span> 시험 종료 후 <b>답안지를 정시에 제출하지 않을 경우 불합격 처리</b>하오니 주의하시기 바랍니다.</li>
+                </ul>
+                <p class="contMg">※ 기타 문의사항은 한국정보화진흥원으로 문의하여 주시기 바랍니다.  감사합니다.</p>
+            </div>
+
         </div>
+        
 	</section>
 </div>
 <footer id="footer">
