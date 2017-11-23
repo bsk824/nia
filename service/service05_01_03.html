@@ -146,8 +146,164 @@
                 </table>
             </div>
 
-            <p class="butDotTxt">응시자격구분에 따른 심의 서류는 다음과 같습니다.</p>
+            <p class="bulDotTxt contMg2">응시자격구분에 따른 심의 서류는 다음과 같습니다.</p>
+
+            <div class="infoTable contMg">
+                <table>
+                    <caption>응시자 증빙서류 정보</caption>
+                    <colgroup>
+                        <col style="width:130px;">
+                        <col style="width:300px;">
+                        <col>
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th scope="col">구분</th>
+                            <th scope="col">응시자격 요건</th>
+                            <th scope="col">심의 서류</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="3" class="center">기술자격</td>
+                            <td>기술사</td>
+                            <td><span class="bulDotTxt">기술사 자격증 사본 1부</span></td>
+                        </tr>
+                        <tr>
+                            <td class="line">기사자격을 가진 자로서 정보처리분야 실무경력 7년 이상인 자</td>
+                            <td>
+                                <ul class="bulDot">
+                                    <li>기사 자격증 사본 1부</li>
+                                    <li>경력(재직)증명서 1부</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="line">산업기사자격을 가진 자로서 정보처리분야 실무경력 10년 이상인 자</td>
+                            <td>
+                                <ul class="bulDot">
+                                    <li>산업기사 자격증 사본 1부</li>
+                                    <li>경력(재직)증명서 1부</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td rowspan="5" class="center">학력</td>
+                            <td>박사학위를 가진 자<br>(정보처리분야 학위소지자)</td>
+                            <td><span class="bulDotTxt">박사학위기 사본 1부</span></td>
+                        </tr>
+                        <tr>
+                            <td class="line">석사학위를 가진 자로서 정보처리분야 실무경력 6년 이상인 자</td>
+                            <td>
+                                <ul class="bulDot">
+                                    <li>석사학위기 사본 또는 졸업증명서 1부</li>
+                                    <li>경력(재직)증명서 1부</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="line">학사학위를 가진 자로서 정보처리분야 실무경력 9년 이상인 자</td>
+                            <td>
+                                <ul class="bulDot">
+                                    <li>학사학위기 사본 또는 졸업증명서 1부</li>
+                                    <li>경력(재직)증명서 1부</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="line">전문대학을 졸업한 자로서 정보처리분야 실무경력 12년 이상인 자</td>
+                            <td>
+                                <ul class="bulDot">
+                                    <li>전문대학 졸업증명서 1부</li>
+                                    <li>경력(재직)증명서 1부</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="line">고등학교를 졸업한 자로서 정보처리분야 실무경력 15년 이상인 자</td>
+                            <td>
+                                <ul class="bulDot">
+                                    <li>고등학교 졸업증명서1부</li>
+                                    <li>경력(재직)증명서 1부</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
             
+        </div>
+        <div class="subSection">
+            <h2 class="subTitle">
+                학력정보
+                <span class="subTitleMark">첨부파일이 여러 개일 경우, 하나의 파일로 압축하여 제출해주시기 바랍니다</span>
+            </h2>
+            <div class="btnWrap">
+                <span class="btnRight">
+                    <button type="button" class="btnType1">추가</button>
+                </span>
+            </div>
+            <div class="infoTable typeWrite">
+                <table>
+                    <caption>점수 정보 테이블</caption>
+                    <colgroup>
+                        <col>
+                        <col style="width:290px">
+                        <col>
+                        <col style="width:101px">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th scope="col">학교명</th>
+                            <th scope="col">기간</th>
+                            <th scope="col">전공</th>
+                            <th scope="col">학위</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="center">
+                            <td>
+                                <input type="text" class="inpuTxt sizeMax" title="학교명 입력">
+                            </td>
+                            <td>
+                                <span class="periodCell">
+                                    <span>
+                                        <input type="text" class="inpuTxt sizeMax" title="입학 일 입력">
+                                        <button type="button" class="btnCal">달력 보기</button>
+                                    </span>
+                                    <span class="sym">~</span>
+                                    <span>
+                                        <input type="text" class="inpuTxt sizeMax" title="졸업 일 입력">
+                                        <button type="button" class="btnCal">달력 보기</button>
+                                    </span>
+                                </span>
+                            </td>
+                            <td>
+                                <input type="text" class="inpuTxt sizeMax" title="전공 입력">
+                            </td>
+                            <td>
+                                <input type="text" class="inpuTxt sizeMax" title="학위 입력">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" class="fileAdd">
+                                <span class="fileCell">
+                                    <strong class="tit">파일첨부</strong>
+                                    <span class="inputFile">
+                                        <input type="text" class="inpuTxt" title="첨부파일명" readonly="readonly">
+                                        <label class="btnType1">파일첨부 <input type="file" title="파일첨부"></label>
+                                    </span>
+                                    <span class="btnDel">
+                                        <button type="button" class="btnType1">삭제</button>
+                                    </span>
+                                </span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+
         </div>
         
 	</section>
