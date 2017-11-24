@@ -208,6 +208,7 @@
 .iconTxt05 {background:url(../../images/front/bg_icon05.png) no-repeat 50% 0;}
 .iconTxt06 {background:url(../../images/front/bg_icon06.png) no-repeat 50% 0;}
 .iconTxt07 {background:url(../../images/front/bg_icon07.png) no-repeat 50% 0;}
+.iconTxt08 {background:url(../../images/front/bg_icon11.png) no-repeat 50% 0;}
 
 /* color */
 .fontColor1 {color:#bf91f3;}
@@ -255,11 +256,11 @@
 .typeWrite .periodCell > span {display:inline-block;width:45%;position:relative;padding-right:35px;box-sizing:border-box;}
 .typeWrite .periodCell > span .btnCal {position:absolute;top:0;right:0;}
 .typeWrite .periodCell > span.sym {width:15px;padding:0;text-align:center;line-height:30px;vertical-align:middle;}
-.typeWrite .fileAdd {padding:0;}
-.typeWrite .fileAdd .fileCell {position:relative;display:block;padding:7px 109px 7px 154px;}
-.typeWrite .fileAdd .fileCell .tit {position:absolute;top:0;bottom:0;left:0;width:122px;padding:13px 0 0 20px;background:#fafafa;border-right:1px solid #e8e8e8;}
-.typeWrite .fileAdd .fileCell .btnDel {position:absolute;top:0;right:0;bottom:0;padding-top:7px;width:100px;border-left:1px solid #e8e8e8;text-align:center;}
-
+.typeWrite .innerCell {padding:0;}
+.typeWrite .innerCell .cell {position:relative;display:block;padding:7px 10px 7px 154px;}
+.typeWrite .innerCell .th {position:absolute;top:0;bottom:0;left:0;width:122px;padding:13px 0 0 20px;background:#fafafa;border-right:1px solid #e8e8e8;}
+.typeWrite .innerCell .fileCell {padding:7px 109px 7px 154px;}
+.typeWrite .innerCell .fileCell .btnDel {position:absolute;top:0;right:0;bottom:0;padding-top:7px;width:100px;border-left:1px solid #e8e8e8;text-align:center;box-sizing:border-box;}
 
 /* bbs */
 .bbsSearch {text-align:right;}
@@ -350,6 +351,7 @@
 
 .btnCal {width:30px;height:30px;background:#fff url(../../images/front/btn_cal.gif) no-repeat 50% 50%;border:1px solid #e8e8e8;font:0/0 a;}
 
+.subTitle + .btnWrap {margin:-40px 0 0;}
 .pagination + .btnWrap {margin:-33px 0 0;}
 
 /* margin */

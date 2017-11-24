@@ -231,12 +231,12 @@
                     </tbody>
                 </table>
             </div>
-            
         </div>
+
         <div class="subSection">
             <h2 class="subTitle">
                 학력정보
-                <span class="subTitleMark">첨부파일이 여러 개일 경우, 하나의 파일로 압축하여 제출해주시기 바랍니다</span>
+                <span class="subTitleMark">첨부파일이 여러 개일 경우, 하나의 파일로 압축하여 제출해주시기 바랍니다.</span>
             </h2>
             <div class="btnWrap">
                 <span class="btnRight">
@@ -245,12 +245,12 @@
             </div>
             <div class="infoTable typeWrite">
                 <table>
-                    <caption>점수 정보 테이블</caption>
+                    <caption>학력정보 입력 테이블</caption>
                     <colgroup>
                         <col>
                         <col style="width:290px">
                         <col>
-                        <col style="width:101px">
+                        <col style="width:100px">
                     </colgroup>
                     <thead>
                         <tr>
@@ -286,9 +286,9 @@
                             </td>
                         </tr>
                         <tr>
-                            <td colspan="4" class="fileAdd">
-                                <span class="fileCell">
-                                    <strong class="tit">파일첨부</strong>
+                            <td colspan="4" class="innerCell">
+                                <span class="cell">
+                                    <strong class="th">파일첨부</strong>
                                     <span class="inputFile">
                                         <input type="text" class="inpuTxt" title="첨부파일명" readonly="readonly">
                                         <label class="btnType1">파일첨부 <input type="file" title="파일첨부"></label>
@@ -303,8 +303,214 @@
                 </table>
             </div>
 
+            <div class="infoTable typeWrite">
+                <table>
+                    <caption>학력정보 입력 테이블</caption>
+                    <colgroup>
+                        <col >
+                        <col style="width:290px">
+                        <col>
+                        <col style="width:100px">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th scope="col">학교명</th>
+                            <th scope="col">기간</th>
+                            <th scope="col">전공</th>
+                            <th scope="col">학위</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="center">
+                            <td>
+                                <input type="text" class="inpuTxt sizeMax" title="학교명 입력">
+                            </td>
+                            <td>
+                                <span class="periodCell">
+                                    <span>
+                                        <input type="text" class="inpuTxt sizeMax" title="입학 일 입력">
+                                        <button type="button" class="btnCal">달력 보기</button>
+                                    </span>
+                                    <span class="sym">~</span>
+                                    <span>
+                                        <input type="text" class="inpuTxt sizeMax" title="졸업 일 입력">
+                                        <button type="button" class="btnCal">달력 보기</button>
+                                    </span>
+                                </span>
+                            </td>
+                            <td>
+                                <input type="text" class="inpuTxt sizeMax" title="전공 입력">
+                            </td>
+                            <td>
+                                <input type="text" class="inpuTxt sizeMax" title="학위 입력">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" class="innerCell">
+                                <span class="cell fileCell">
+                                    <strong class="th">파일첨부</strong>
+                                    <span class="inputFile">
+                                        <input type="text" class="inpuTxt" title="첨부파일명" readonly="readonly">
+                                        <label class="btnType1">파일첨부 <input type="file" title="파일첨부"></label>
+                                    </span>
+                                    <span class="btnDel">
+                                        <button type="button" class="btnType1">삭제</button>
+                                    </span>
+                                </span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="subSection">
+            <h2 class="subTitle">
+                자격정보
+                <span class="subTitleMark">첨부파일이 여러 개일 경우, 하나의 파일로 압축하여 제출해주시기 바랍니다.</span>
+            </h2>
+            <div class="btnWrap">
+                <span class="btnRight">
+                    <button type="button" class="btnType1">추가</button>
+                </span>
+            </div>
+            <div class="infoTable typeWrite">
+                <table>
+                    <caption>자격정보 입력 테이블</caption>
+                    <colgroup>
+                        <col>
+                        <col style="width:200px">
+                        <col style="width:200px">
+                        <col style="width:145px">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th scope="col">자격명</th>
+                            <th scope="col">자격번호</th>
+                            <th scope="col">발행기간</th>
+                            <th scope="col">취득일자</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="center">
+                            <td>
+                                <input type="text" class="inpuTxt sizeMax" title="자격명 입력">
+                            </td>
+                            <td>
+                                <input type="text" class="inpuTxt sizeMax" title="자격번호 입력">
+                            </td>
+                            <td>
+                                <input type="text" class="inpuTxt sizeMax" title="발행기간 입력">
+                            </td>
+                            <td>
+                                <span class="periodCell">
+                                    <span style="width:100%;">
+                                        <input type="text" class="inpuTxt sizeMax" title="입학 일 입력">
+                                        <button type="button" class="btnCal">달력 보기</button>
+                                    </span>
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" class="innerCell">
+                                <span class="cell fileCell">
+                                    <strong class="th">파일첨부</strong>
+                                    <span class="inputFile">
+                                        <input type="text" class="inpuTxt" title="첨부파일명" readonly="readonly">
+                                        <label class="btnType1">파일첨부 <input type="file" title="파일첨부"></label>
+                                    </span>
+                                    <span class="btnDel">
+                                        <button type="button" class="btnType1">삭제</button>
+                                    </span>
+                                </span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="subSection">
+            <h2 class="subTitle">
+                경력정보
+                <span class="subTitleMark">첨부파일이 여러 개일 경우, 하나의 파일로 압축하여 제출해주시기 바랍니다.</span>
+            </h2>
+            <div class="btnWrap">
+                <span class="btnRight">
+                    <button type="button" class="btnType1">추가</button>
+                </span>
+            </div>
+            <div class="infoTable typeWrite">
+                <table>
+                    <caption>경력정보 입력 테이블</caption>
+                    <colgroup>
+                        <col>
+                        <col style="width:260px">
+                        <col style="width:290px">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th scope="col">회사명</th>
+                            <th scope="col">근무부서</th>
+                            <th scope="col">기간</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="center">
+                            <td>
+                                <input type="text" class="inpuTxt sizeMax" title="회사명 입력">
+                            </td>
+                            <td>
+                                <input type="text" class="inpuTxt sizeMax" title="근무부서 입력">
+                            </td>
+                            <td>
+                                <span class="periodCell">
+                                    <span>
+                                        <input type="text" class="inpuTxt sizeMax" title="입학 일 입력">
+                                        <button type="button" class="btnCal">달력 보기</button>
+                                    </span>
+                                    <span class="sym">~</span>
+                                    <span>
+                                        <input type="text" class="inpuTxt sizeMax" title="졸업 일 입력">
+                                        <button type="button" class="btnCal">달력 보기</button>
+                                    </span>
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" class="innerCell">
+                                <span class="cell">
+                                    <strong class="th">담당업무</strong>
+                                    <span>
+                                        <input type="text" class="inpuTxt sizeMax" title="담당업무 입력">
+                                    </span>
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" class="innerCell">
+                                <span class="cell fileCell">
+                                    <strong class="th">파일첨부</strong>
+                                    <span class="inputFile">
+                                        <input type="text" class="inpuTxt" title="첨부파일명" readonly="readonly">
+                                        <label class="btnType1">파일첨부 <input type="file" title="파일첨부"></label>
+                                    </span>
+                                    <span class="btnDel">
+                                        <button type="button" class="btnType1">삭제</button>
+                                    </span>
+                                </span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
 
         </div>
+
+        <div class="btnWrap">
+            <button type="button" class="btnType2">등록</button>
+        </div>
+        
         
 	</section>
 </div>

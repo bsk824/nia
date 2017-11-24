@@ -49,3 +49,12 @@
 .ticketPrint .receiveSection .infoTable {margin:0 0 -1px;}
 .ticketPrint .receiveSection .receivePicture {top:50%;transform:translateY(-50%);}
 .ticketPrint .ticketSign {margin:50px 0 60px;text-align:right;}
+
+.testStatus {margin:30px 0 0;padding:50px 0;}
+.testStatus ul:after {content:"";display:block;clear:both;}
+.testStatus li {float:left;width:33%;text-align:center;}
+.testStatus li + li {border-left:1px solid #e8e8e8;}
+.testStatus li [class*="test"] {display:block;width:120px;height:40px;margin:0 auto 20px;padding:80px 0 0;}
+.testStatus li .test1 {background:url(../../images/front/bg_icon08.png) no-repeat;}
+.testStatus li .test2 {background:url(../../images/front/bg_icon09.png) no-repeat;}
+.testStatus li .test3 {background:url(../../images/front/bg_icon10.png) no-repeat;}
