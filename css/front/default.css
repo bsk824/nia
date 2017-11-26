@@ -87,6 +87,8 @@ textarea {padding:10px;resize:none;border:1px solid #e1e1e1;border-radius:0;box-
 	.radio + .radio {margin:0 0 0 .5rem;}
 	.radio input + span:before {width:2.5rem;height:2.5rem;margin:0 .4rem 0 0;background-position:-3rem -4.1rem;background-size:50rem;}
 	.radio input:checked + span:before {background-position:-5.5rem -4.1rem;}
+	.inputFile {padding-right:8.5rem;box-sizing:border-box;
+	
 }
 @media all and (max-width:560px) {
 	body, input, select, textarea, button {font-size:1.2rem;}

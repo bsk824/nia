@@ -69,6 +69,10 @@
 .mainTop .txt1,
 .mainTop .txt2 {font-size:4.8rem;}
 
+/* contents */
+.serviceLink .linkBtn {top:auto;bottom:1rem;}
+.serviceLink .linkTxt {padding:0 0 10rem;}
+
 @media screen and (max-width:767px){
     #header {border-bottom:1px solid #dfdfe0;}
     #header .headerInner {height:auto;padding:0;}
@@ -122,12 +126,13 @@
 
     #snb {display:none;}
 
-    .breadcrumb {height:3.4rem;}
+    .breadcrumb {height:auto;}
     .breadcrumbInner {display:inline-block;width:auto;padding:0;font-size:1.2rem;}
     .breadcrumbInner .home {width:1.3rem;height:1.4rem;background:url(../../images/front/mobile/img_home.gif) no-repeat;background-size:cover;}
     .breadcrumbInner .current {display:none;}
+    .nonSnb .breadcrumb .current,
     .breadcrumb span,
-    .breadcrumb .mob {position:relative;display:inline-block;margin-left:1rem;padding:.9rem 0 .8rem 1.6rem;z-index:2;background:url(../../images/front/mobile/img_breadcrumb_arrow.gif) no-repeat 0 50%;background-size:.6rem;vertical-align:middle;line-height:1;}
+    .breadcrumb .mob {position:relative;display:inline-block;margin-left:.4rem;padding:1rem 0 .9rem 1.1rem;z-index:2;background:url(../../images/front/mobile/img_breadcrumb_arrow.gif) no-repeat 0 50%;background-size:.6rem;vertical-align:middle;line-height:1;}
     .breadcrumb .mob button {padding-right:1.2rem;color:#333;font-weight:bold;}
     .breadcrumb .mob button:after {content:"";display:inline-block;margin-left:.5rem;border:.4rem solid transparent;border-top:.5rem solid #333;border-bottom:0;vertical-align:middle;}
     
@@ -214,6 +219,7 @@
     
     /* box */
     .boxType1 {padding:1.5rem;border-width:.2rem}
+    .iconBox {padding:5rem 1rem;}
 
     /* tabmenu */
     .tabMenu {margin:0 0 3.5rem;}
@@ -221,7 +227,20 @@
 
     /* txt */
     .tipTxt {margin-top:1.2rem;font-size:1.1rem;}
-    
+    .tipTxt2 {margin:10px 0 0;padding:0 0 0 18px;background:url(../../images/front/icon_mark.gif) no-repeat 0 50%;color:#999;font-size:13px;}
+    .txtCenter {margin-top:1rem;text-align:center;}
+    [class*="iconTxt"] {padding:13.5rem 0 0;font-size:1.5rem;}
+    [class*="iconTxt"] [class*="btnType"] {margin:1.5rem 0 0;}
+    .iconTxt01 {background:url(../../images/front/mobile/bg_icon01.png) no-repeat 50% 0;background-size:12rem;}
+    .iconTxt02 {background:url(../../images/front/mobile/bg_icon02.png) no-repeat 50% 0;background-size:12rem;}
+    .iconTxt03 {background:url(../../images/front/mobile/bg_icon03.png) no-repeat 50% 0;background-size:12rem;}
+    .iconTxt04 {background:url(../../images/front/mobile/bg_icon04.png) no-repeat 50% 0;background-size:12rem;}
+    .iconTxt05 {background:url(../../images/front/mobile/bg_icon05.png) no-repeat 50% 0;background-size:12rem;}
+    .iconTxt06 {background:url(../../images/front/mobile/bg_icon06.png) no-repeat 50% 0;background-size:12rem;}
+    .iconTxt07 {background:url(../../images/front/mobile/bg_icon07.png) no-repeat 50% 0;background-size:12rem;}
+    .iconTxt08 {background:url(../../images/front/mobile/bg_icon11.png) no-repeat 50% 0;background-size:12rem;}
+    .iconTxt09 {background:url(../../images/front/mobile/bg_icon12.png) no-repeat 50% 0;background-size:12rem;}
+
     /* table */
     .infoTable {margin:1rem 0 0;}
     .infoTable th,
@@ -232,7 +251,14 @@
     .typeWrite td {padding:.3rem .9rem;}
     .typeWrite .errorTxt {display:block;margin:.5rem 0 0;color:#e95c5c;font-size:1.1rem;}
     .typeWrite .tip {display:block;margin:.5rem 0 0;padding:0 0 0 1.5rem;background:url(../../images/front/mobile/icon_mark.gif) no-repeat 0 .3rem;background-size:1.1rem;font-size:1.1rem;}
+    .typeWrite .juminCell {display:table;width:100%;}
     
+    .typeWrite .juminCell > span {display:table-cell;width:auto;}
+    .typeWrite .juminCell > span.sym {width:1rem;line-height:3rem;}
+
+    .typeWrite textarea {width:100%;height:10rem;}
+    .typeWrite .sizeMax, .typeWrite .sizeMaxHarf,.typeWrite .sizeHarf, .typeWrite .sizeSmall,
+    .typeWrite .inputFile {width:100%;}
 
     /* bbs */
     .bbsSearch select {min-width:10rem;height:3rem;font-size:1.3rem;vertical-align:top;}
@@ -306,6 +332,7 @@
 
     /* btn */
     .btnWrap {margin:3rem 0 0;}
+    [class*="btnType"] {padding:.6rem 1.9rem .4rem;font-size:1.2rem;}
     [class*="btnType"] + [class*="btnType"] {margin-left:.2rem;}
     .pagination + .btnWrap {margin:-3rem 0 0;}
 
@@ -336,4 +363,37 @@
     .progress li.step3 {background:url(../../images/front/mobile/img_progress03.gif) no-repeat;}
     .progress li.step4 {background:url(../../images/front/mobile/img_progress04.gif) no-repeat;}
     .progress li.step5 {background:url(../../images/front/mobile/img_progress05.gif) no-repeat;}
+    
+    .inputWrap {width:100%;margin:3rem auto 0;}
+    .inputWrap p + p {margin-top:.5rem;}
+    .inputWrap .inpuTxt {width:100%;height:4rem;font-size:1.6rem;}
+    .inputWrap .juminCell {display:table;width:100%;}
+    .inputWrap .juminCell span {display:table-cell;width:auto;}
+    .inputWrap .juminCell span.sym {width:1rem;text-align:center;}
+    .inputWrap .btnWrap {margin:1rem 0 0;}
+    .inputWrap .btnWrap [class*="btnType"] {height:4.5rem;margin:.5rem 0 0;font-size:1.6rem;}
+    .inputWrap .btnWrap a[class*="btnType"] {padding-top:1rem;}
+
+    .serviceLink {position:relative;}
+    .serviceLink + .serviceLink {margin-top:30px;}
+    .serviceLink .linkTitle {margin:0 0 .8rem;font-size:1.6rem;line-height:1.2;}
+    .serviceLink .linkTxt {padding:0 0 8rem;background:url(../../images/front/mobile/bg_service_link_arrow.png) no-repeat left bottom 2.5rem;background-size:7.5rem;}
+    .serviceLink .linkBtn {right:1rem;margin-top:0;}
+    .serviceLink .linkBtn a {width:8rem;height:8rem;margin-left:1rem;font-size:1.3rem;}
+    .serviceLink .linkBtn a span {display:inline-block;vertical-align:middle;font-weight:bold;}
+    .serviceLink .linkBtn a:before {content:"";display:inline-block;height:100%;vertical-align:middle;}
+
+    .sitemapSection > section {float:none;width:auto;}
+    .sitemapSection > section + section {margin:3rem 00;}
+    .sitemapSection .tit {padding:1.5rem 1rem 1.3rem;font-size:1.8rem;}
+    .sitemapSection .list > li > strong,
+    .sitemapSection .list > li > a {padding:1rem 1rem .8rem;font-size:1.4rem;}
+    .sitemapSection .list > li ul {margin:0;padding:0;}
+    .sitemapSection .list > li li a {padding:.4rem 1.4rem;font-size:1.2rem;}
+
+    .error404 {padding:0;text-align:center;}
+    .error404 .txt1 {padding:14rem 0 0;background:url(../../images/front/mobile/bg_error404.png) no-repeat 50% 0;background-size:12rem;font-size:1.7rem;}
+    .error404 .txt2 {margin:2rem 0 0;color:#444;font-size:1.3rem;}
+    .error404 .btnWrap {margin:4.5rem 0 0;}
+    .error404 .btnType1 {padding:1rem 8rem .8rem;font-size:1.6rem;}
 }
