@@ -246,6 +246,7 @@
     .bbsList li a {display:block;padding:1.2rem .5rem 1rem;}
     .bbsList li a > span {display:inline-block;width:auto !important;text-align:left;line-height:1;font-size:1.2rem;color:#999;}
     .bbsList li a > span:before {position:static;display:inline;margin-right:.4rem;color:#999;}
+    .faqList li a > span.writer,
     .bbsList li a > span:last-child {padding-left:1rem;margin-left:1rem;border-left:1px solid #ccc;}
     .bbsList li a > span.subject {display:block;margin:0 0 .3rem;padding:0;}
     .bbsList li a > span.subject:before {display:none;}
@@ -253,8 +254,14 @@
     .bbsList [class*="bbsIcon"] {display:inline-block;margin-left:5px;font:0/0 a;vertical-align:middle;}
     .bbsList .bbsIconNew {width:1.5rem;height:1.5rem;background:url(../../images/front/mobile/icon_new.png) no-repeat;background-size:cover;}
     .bbsList .bbsIconFile {width:1.4rem;height:1.5rem;background:url(../../images/front/mobile/icon_file.png) no-repeat;background-size:cover;}
+    .bbsList li a > span.status > span {width:6.5rem;height:2.4rem;padding:.7rem 0 0;border-radius:1.3rem;box-sizing:border-box;vertical-align:middle;}
     .bbsList .sort,
-    .bbsList .no {display:none;}
+    .bbsList .no,
+    .faqList .status:before,
+    .faqList li:first-child .status:before,
+    .faqList .view {display:none;}
+    .faqList li a > span.writer {color:#999;}
+    .faqList li a > span.writer:before {color:#666;}
 
     .bbsPassLayer {z-index:100;}
     .bbsPassLayer:before {content:"";position:fixed;top:0;right:0;bottom:0;left:0;background:#000;opacity:.6;}
@@ -263,8 +270,8 @@
     .bbsPassLayer .inpuTxt {width:18rem;}
     .bbsPassLayer .btnWrap {margin-top:1rem;}
 
-    .bbsView .bbsViewTitle {padding:1.5rem 1.5rem 0;font-size:1.8rem;background:#f8f8f8;}
-    .bbsView .bbsViewInfo {display:block;padding:.5rem 1.5rem 1.5rem;box-sizing:border-box;background:#f8f8f8;}
+    .bbsView .bbsViewTitle {padding:1rem 1rem 0;font-size:1.8rem;background:#f8f8f8;}
+    .bbsView .bbsViewInfo {display:block;padding:.5rem 1rem 1rem;box-sizing:border-box;background:#f8f8f8;}
     .bbsView .bbsViewInfo dt,
     .bbsView .bbsViewInfo dd {display:inline-block;padding:0;border:0;line-height:1;font-size:1.2rem;}
     .bbsView .bbsViewInfo dt {width:auto;margin-left:1rem;padding-left:1rem;background:none;border-left:1px solid #ccc;color:#999;font-weight:normal;}
@@ -300,7 +307,7 @@
     /* btn */
     .btnWrap {margin:3rem 0 0;}
     [class*="btnType"] + [class*="btnType"] {margin-left:.2rem;}
-    .pagination + .btnWrap {margin:1.5rem 0 0;}
+    .pagination + .btnWrap {margin:-3rem 0 0;}
 
     /* margin */
     .contMg {margin-top:1rem;}

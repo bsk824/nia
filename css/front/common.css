@@ -288,7 +288,7 @@
 .bbsList li a > span:before {display:none;content:"";position:absolute;top:-43px;right:0;left:0;color:#444;}
 .bbsList li:first-child a > span:before {display:inline;}
 .bbsList li a > span.subject {padding-left:10px;text-align:left;}
-.bbsList li a > span.subject .txt {display:inline-block;max-width:85%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;vertical-align:middle;}
+.bbsList li a > span.subject .txt {display:inline-block;max-width:75%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;vertical-align:middle;}
 .bbsList [class*="bbsIcon"] {display:inline-block;margin-left:5px;font:0/0 a;vertical-align:middle;}
 .bbsList .bbsIconNew {width:15px;height:15px;background:url(../../images/front/icon_new.png) no-repeat;}
 .bbsList .bbsIconFile {width:13px;height:15px;background:url(../../images/front/icon_file.png) no-repeat;}
