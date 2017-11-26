@@ -10,7 +10,7 @@
 #header h1 {float:left;height:100%;line-height:1;}
 #header h1:after {content:"";display:inline-block;height:100%;vertical-align:middle;}
 #header h1 a {display:inline-block;vertical-align:middle;}
-#header h1 img {width:155px;}
+#header h1 .logoMo {display:none;}
 #header .gnb {float:left;}
 #header .gnb > ul,
 #header .gnb .btnMenu,
@@ -107,9 +107,10 @@
 #footer .footerInfo .footInfoTxt small span {color:#233a7b;}
 
 /* main */
-.main #container, .main #contents {width:auto;float:none;padding-top:0;}
-.mainTop {height:480px;background:url(../../images/front/img_main_visual.jpg) no-repeat 50% 0;border-bottom:1px solid #dfe4ee;}
-.mainTop h1 {width:1000px;margin:0 auto;padding:70px 0 0;}
+.main #container, .main #contents {width:auto;float:none;padding:0;}
+.main #footer {margin:0;}
+.mainTop {height:420px;background:url(../../images/front/img_main_visual.jpg) no-repeat 50% 0;border-bottom:1px solid #dfe4ee;}
+.mainTop h1 {width:1000px;margin:0 auto;padding:50px 0 0;}
 .mainTop .eng {display:block;width:400px;margin:0 0 25px;padding:0 0 15px;border-bottom:1px solid #a8a8a8;color:#999;font-size:12px;font-family:notoB;letter-spacing:3px;}
 .mainTop .txt1, .mainTop .txt2 {display:block;color:#222;font-size:48px;line-height:1.2;}
 .mainTop .txt2 {font-family:notoB;}
@@ -168,13 +169,13 @@
 /* list */
 .bulDot > li,
 .bulDotTxt {padding-left:9px;background:url(../../images/front/bul_dot.gif) no-repeat 0 10px;font-size:16px;}
-.bulDot > li + li {margin-top:5px;}
+.bulDot > li + li {margin-top:8px;}
 
 .infoTable .bulDot > li,
 .infoTable .bulDotTxt {font-size:14px;background-position:0 8px;}
 
 .bulDash > li,
-.bulDashTxt {padding-left:6px;background:url(../../images/front/bul_dash.gif) no-repeat 0 8px;font-size:13px;}
+.bulDashTxt {padding-left:6px;background:url(../../images/front/bul_dash.gif) no-repeat 0 8px;font-size:14px;}
 
 .bulDotTxt + .bulDash {margin:5px 0 0 9px;}
 
@@ -188,7 +189,6 @@
 .iconBox {padding:50px 20px;}
 
 /* tabmenu */
-.tabMenu {margin:0 0 5rem;}
 .tabMenu:after {content:"";display:block;clear:both;}
 .tabMenu li {float:left;}
 .tabMenu li a {display:block;padding:19px 0;margin:0 -1px;background:#efefef;border:1px solid #dbdbdb;color:#4d4d4d;font-size:18px;line-height:1;text-align:center;font-weight:bold;}
@@ -369,6 +369,8 @@
 .contMg {margin-top:10px;}
 .contMg2 {margin-top:30px;}
 .contSubMg {margin:10px 0 0 25px;}
+
+.moCont {display:none;}
 
 @media print {
     #header, #snb, #footer, .subPageTop, .breadcrumb, .pageTitle, .btnWrap {display:none;}

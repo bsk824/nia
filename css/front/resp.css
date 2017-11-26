@@ -6,6 +6,8 @@
 #footer .footerInfo .footerInfoInner {width:100%;box-sizing:border-box;padding:0 1.5rem;}
 
 #header h1 {left:1.5rem;}
+#header h1 .logoPc {display:none;}
+#header h1 .logoMo {display:block;width:15.5rem;}
 #header .gnb {float:none;margin:0 10.5rem 0 17rem;padding:0;}
 #header .allMenu {text-align:center;}
 #header .allMenu > ul > li {float:none;display:inline-block;margin:0 3%;text-align:left;}
@@ -136,7 +138,7 @@
 
     #contents {padding-top:3.5rem;}
 
-    #footer {margin:3rem 0 0;padding:0 1.5rem;background:#f6f6f4;}
+    #footer {margin:5rem 0 0;padding:0 1.5rem;background:#f6f6f4;}
     #footer .footerLink {padding:0;}
     #footer .footerLink nav {float:none;text-align:center;}
     #footer .footerLink nav > span {position:relative;display:inline-block;float:none;margin:0;padding:1rem 0;}
@@ -202,7 +204,7 @@
     /* list */
     .bulDot > li,
     .bulDotTxt {padding-left:.9rem;background-position:0 .7rem;font-size:1.3rem;}
-    .bulDot > li + li {margin-top:1rem;}
+    .bulDot > li + li {margin-top:.8rem;}
 
     .bulDash > li,
     .bulDashTxt {padding-left:.6rem;background-position:0 .7rem;font-size:1.2rem;}
@@ -214,6 +216,7 @@
     .boxType1 {padding:1.5rem;border-width:.2rem}
 
     /* tabmenu */
+    .tabMenu {margin:0 0 3.5rem;}
     .tabMenu li a {padding:1.2rem 0;margin:0 -1px;font-size:1.4rem;}
 
     /* txt */
@@ -222,16 +225,18 @@
     /* table */
     .infoTable {margin:1rem 0 0;}
     .infoTable th,
-    .infoTable td {padding:1rem .5rem;font-size:1.2rem;}
-    .typeWrite colgroup {display:none;}
+    .infoTable td {padding:1rem;font-size:1.2rem;}
+    .infoTable tbody th {padding:1rem 1.5rem;}
+    .infoTable colgroup {display:none;}
     .typeWrite th {padding:0 1.5rem;}
     .typeWrite td {padding:.3rem .9rem;}
     .typeWrite .errorTxt {display:block;margin:.5rem 0 0;color:#e95c5c;font-size:1.1rem;}
     .typeWrite .tip {display:block;margin:.5rem 0 0;padding:0 0 0 1.5rem;background:url(../../images/front/mobile/icon_mark.gif) no-repeat 0 .3rem;background-size:1.1rem;font-size:1.1rem;}
+    
 
     /* bbs */
-    .bbsSearch select {min-width:10rem;height:3rem;font-size:1.3rem;}
-    .bbsSearch .inpuTxt {padding:0 3.6rem 0 .5rem;height:2.8rem;}
+    .bbsSearch select {min-width:10rem;height:3rem;font-size:1.3rem;vertical-align:top;}
+    .bbsSearch .inpuTxt {height:3rem;padding:0 3.6rem 0 .5rem;vertical-align:top;}
     .bbsSearch .inpuTxt input[type="text"] {width:12rem;font-size:1.3rem;}
     .bbsSearch .inpuTxt .btnSearch {width:3.6rem;height:2.8rem;background:url(../../images/front/mobile/btn_search.gif) no-repeat;background-size:cover;}
 
@@ -248,6 +253,7 @@
     .bbsList [class*="bbsIcon"] {display:inline-block;margin-left:5px;font:0/0 a;vertical-align:middle;}
     .bbsList .bbsIconNew {width:1.5rem;height:1.5rem;background:url(../../images/front/mobile/icon_new.png) no-repeat;background-size:cover;}
     .bbsList .bbsIconFile {width:1.4rem;height:1.5rem;background:url(../../images/front/mobile/icon_file.png) no-repeat;background-size:cover;}
+    .bbsList .sort,
     .bbsList .no {display:none;}
 
     .bbsPassLayer {z-index:100;}
@@ -281,7 +287,7 @@
     .bbsReply .infoTable {border-bottom:1px solid #efefef;}
 
     .pagination {margin:3rem 0 0;letter-spacing:.2rem;}
-    .pagination [class*="page"] {width:3rem;height:3rem;margin:0 1rem;}
+    .pagination [class*="page"] {width:3rem;height:3rem;margin:0 1rem;vertical-align:middle;}
     .pagination .pagePrev {background:url(../../images/front/mobile/btn_pagination_prev.gif) no-repeat;background-size:cover;}
     .pagination .pageNext {background:url(../../images/front/mobile/btn_pagination_next.gif) no-repeat;background-size:cover;}
     .pagination .pageStart,
@@ -293,5 +299,34 @@
 
     /* btn */
     .btnWrap {margin:3rem 0 0;}
+    [class*="btnType"] + [class*="btnType"] {margin-left:.2rem;}
     .pagination + .btnWrap {margin:1.5rem 0 0;}
+
+    /* margin */
+    .contMg {margin-top:1rem;}
+    .contMg2 {margin-top:3rem;}
+    .contSubMg {margin:1rem 0 0 2rem;}
+
+    .moCont {display:block;}
+
+    /* contents */
+    .greeting {font-size:1.3rem;}
+    .greeting .txt {font-size:2.6rem;}
+    .greeting p + p {margin:1.8rem 0 0;}
+    .greeting .sign img {width:15rem;margin-left:1rem;}
+
+    .mapWrap {height:16rem;margin:0 0 1.5rem;}
+
+    .progress {margin-top:-1.5rem;}
+    .progress li {width:8.2rem;height:8.2rem;margin:1.5rem 2rem 0 0;padding-top:5rem;text-align:center;box-sizing:border-box;background-size:cover!important;}
+    .progress li + li {margin-left:0;}
+    .progress li:before,
+    .progress li + li:before {content:"";position:absolute;top:50%;right:-1.5rem;left:auto;width:1.2rem;height:1.4rem;margin-top:-.8rem;background:url(../../images/front/mobile/bg_progress_arrow.gif) no-repeat;background-size:cover;}
+    .progress li:nth-of-type(3) {margin-right:0;}
+    .progress li:last-child:before {display:none;}
+    .progress li.step1 {background:url(../../images/front/mobile/img_progress01.gif) no-repeat;}
+    .progress li.step2 {background:url(../../images/front/mobile/img_progress02.gif) no-repeat;}
+    .progress li.step3 {background:url(../../images/front/mobile/img_progress03.gif) no-repeat;}
+    .progress li.step4 {background:url(../../images/front/mobile/img_progress04.gif) no-repeat;}
+    .progress li.step5 {background:url(../../images/front/mobile/img_progress05.gif) no-repeat;}
 }
