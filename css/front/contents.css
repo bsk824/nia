@@ -58,3 +58,30 @@
 .testStatus li .test1 {background:url(../../images/front/bg_icon08.png) no-repeat;}
 .testStatus li .test2 {background:url(../../images/front/bg_icon09.png) no-repeat;}
 .testStatus li .test3 {background:url(../../images/front/bg_icon10.png) no-repeat;}
+
+.questionnaire {margin:30px 0 0;border:1px solid #e8e8e8;}
+.questionnaire .tit {padding:15px 19px;background:#fafafa;border-bottom:1px solid #e8e8e8;color:#666;font-size:16px;}
+.questionnaire .cont {padding:15px 19px;}
+.questionnaire .cont textarea {width:100%;height:100px;}
+
+.printSign {margin:40px 0 0;text-align:center;}
+.printSign .txt {display:block;font-size:20px;}
+.printSign .date {display:block;margin:45px 0 25px;font-size:14px;}
+.printSign .sign {font-size:24px;color:#333;}
+.printSign .sign span {font-size:14px;}
+
+.sitemapSection:after {content:"";display:block;clear:both;}
+.sitemapSection > section {float:left;width:304px;border:1px solid #e0e4e7;}
+.sitemapSection > section + section {margin:0 0 0 40px;}
+.sitemapSection .tit {padding:20px;background:#f8f7fd;color:#444;font-size:20px;line-height:1;font-weight:bold;}
+.sitemapSection .list > li {border-top:1px solid #e0e4e7;}
+.sitemapSection .list > li > strong,
+.sitemapSection .list > li > a {display:block;padding:18px 20px;color:#333;font-size:16px;font-weight:normal;}
+.sitemapSection .list > li ul {margin:-10px 0 0;padding:0 0 10px;}
+.sitemapSection .list > li li a {display:block;padding:8px 24px;color:#626262;font-size:15px;}
+
+.error404 {padding:120px 0;text-align:center;}
+.error404 .txt1 {padding:150px 0 0;background:url(../../images/front/bg_error404.png) no-repeat 50% 0;color:#333;font-weight:bold;font-size:24px;}
+.error404 .txt2 {margin:20px 0 0;color:#444;font-size:16px;}
+.error404 .btnWrap {margin:55px 0 0;}
+.error404 .btnType1 {padding:10px 100px;font-size:16px;}

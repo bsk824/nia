@@ -56,7 +56,7 @@ textarea {padding:10px;resize:none;border:1px solid #e1e1e1;border-radius:0;box-
 .chk input + span:before {content:"";display:inline-block;display:none\9;width:22px;height:22px;margin:0 10px 0 0;vertical-align:middle;background:url('../../images/front/icon_pack.png') no-repeat 0 -26px;}
 .chk input:checked + span:before {background-position:0 -48px;}
 
-.radio {display:inline-block;position:relative;padding-left:17px;cursor:pointer;vertical-align:middle;}
+.radio {display:inline-block;position:relative;padding-left:20px;cursor:pointer;vertical-align:middle;}
 .radio + .radio {margin:0 0 0 10px;}
 .radio input {position:absolute;visibility:hidden;position:static\9;visibility:visible\9;}
 .radio input + span:before {content:"";display:inline-block;display:none\9;position:absolute;top:4px;left:0;width:12px;height:12px;margin:0 4px 0 0;border:1px solid #bababa;border-radius:50%;}

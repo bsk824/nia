@@ -82,6 +82,8 @@
 
 #contents {float:right;width:730px;padding:60px 0 0;outline:0 none;}
 
+.nonSnb #contents {float:none;width:100%;}
+
 #footer {margin:100px 0 0;border-top:1px solid #dedede;}
 #footer .footerLink {width:1000px;margin:0 auto;}
 #footer .footerLink:after {content:"";display:block;clear:both;}
@@ -198,6 +200,7 @@
 
 /* txt */
 .tipTxt {margin-top:15px;text-align:right;font-size:13px;}
+.tipTxt2 {margin:10px 0 0;padding:0 0 0 18px;background:url(../../images/front/icon_mark.gif) no-repeat 0 50%;color:#999;font-size:13px;}
 .txtCenter {margin-top:15px;text-align:center;}
 [class*="iconTxt"] {padding:135px 0 0;color:#222;font-size:20px;text-align:center;}
 [class*="iconTxt"] [class*="btnType"] {margin:30px 0 0;}
@@ -209,6 +212,7 @@
 .iconTxt06 {background:url(../../images/front/bg_icon06.png) no-repeat 50% 0;}
 .iconTxt07 {background:url(../../images/front/bg_icon07.png) no-repeat 50% 0;}
 .iconTxt08 {background:url(../../images/front/bg_icon11.png) no-repeat 50% 0;}
+.iconTxt09 {background:url(../../images/front/bg_icon12.png) no-repeat 50% 0;}
 
 /* color */
 .fontColor1 {color:#bf91f3;}
@@ -229,6 +233,8 @@
 .infoTable table .line {border-left:1px solid #e3e3e3;}
 .infoTable table .center {padding:10px;text-align:center;} 
 .infoTable table .left {text-align:left;}
+.infoTable .status > span {display:inline-block;width:74px;height:19px;padding:6px 0 0;line-height:1;background:#ededed;color:#444;border-radius:11px;text-align:center;}
+.infoTable .status > span.com {background:#d1b2f6;}
 .btnWrap + .infoTable {margin-top:10px;}
 .infoTable + .infoTable {margin-top:30px;}
 .typeWrite td {padding:7px 9px;}
@@ -343,6 +349,7 @@
 .btnWrap .btnRight {float:right;}
 
 [class*="btnType"] {display:inline-block;padding:4px 19px;font-size:13px;vertical-align:middle;box-sizing:border-box;}
+[class*="btnType"] + [class*="btnType"] {margin-left:2px;}
 .btnType1 {background:#fff;border:1px solid #747474;color:#444;}
 .btnType2 {background:#d8b29d;border:1px solid #d8b29d;color:#222;}
 .btnType3 {background:#bf91f3;border:1px solid #bf91f3;color:#222;}
