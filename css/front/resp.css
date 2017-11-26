@@ -28,7 +28,7 @@
 #footer .footerInfo .footLogo img {width:100%;}
 #footer .footerInfo .footInfoTxt {margin:0 0 0 17rem;}
 
-.breadcrumb {padding:0 1.5rem;}
+.breadcrumb {padding:0 1rem;}
 .breadcrumbInner {width:100%;}
 
 .mainTop {height:auto;margin:0 -1.5rem;padding:0 1.5rem;background-size:cover;}
@@ -366,7 +366,7 @@
     
     .inputWrap {width:100%;margin:3rem auto 0;}
     .inputWrap p + p {margin-top:.5rem;}
-    .inputWrap .inpuTxt {width:100%;height:4rem;font-size:1.6rem;}
+    .inputWrap .inpuTxt {width:100%;height:4rem;padding-top:1.5rem;font-size:1.6rem;}
     .inputWrap .juminCell {display:table;width:100%;}
     .inputWrap .juminCell span {display:table-cell;width:auto;}
     .inputWrap .juminCell span.sym {width:1rem;text-align:center;}
