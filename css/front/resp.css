@@ -217,7 +217,7 @@
 
     /* tabmenu */
     .tabMenu {margin:0 0 3.5rem;}
-    .tabMenu li a {padding:1.4rem 0 1.2ㄱ드;margin:0 -1px;font-size:1.4rem;}
+    .tabMenu li a {padding:1.4rem 0 1.2rem;margin:0 -1px;font-size:1.4rem;}
 
     /* txt */
     .tipTxt {margin-top:1.2rem;font-size:1.1rem;}
@@ -243,7 +243,7 @@
     .bbsSearch ~ .bbsList {margin:1rem 0 0;}
     .bbsList:before, .bbsList:after {display:none;}
     
-    .bbsList li a {display:block;padding:1rem .5rem;}
+    .bbsList li a {display:block;padding:1.2rem .5rem 1rem;}
     .bbsList li a > span {display:inline-block;width:auto !important;text-align:left;line-height:1;font-size:1.2rem;color:#999;}
     .bbsList li a > span:before {position:static;display:inline;margin-right:.4rem;color:#999;}
     .bbsList li a > span:last-child {padding-left:1rem;margin-left:1rem;border-left:1px solid #ccc;}
