@@ -240,12 +240,6 @@
 .typeWrite td {padding:7px 9px;}
 .typeWrite .errorTxt {display:inline-block;margin:0 0 0 10px;color:#e95c5c;font-size:13px;}
 .typeWrite .tip {display:inline-block;margin:0 0 0 10px;padding:0 0 0 18px;background:url(../../images/front/icon_mark.gif) no-repeat 0 50%;font-size:13px;}
-.typeWrite textarea {width:100%;height:180px;}
-.typeWrite .sizeMax {width:100%;}
-.typeWrite .sizeMaxHarf {width:70%;}
-.typeWrite .sizeHarf {width:40%;}
-.typeWrite .sizeSmall {width:20%;}
-.typeWrite .inputFile {width:60%;}
 .typeWrite .inputFile ~ .inputFile {margin-top:5px;}
 .typeWrite .addressCell {display:block;position:relative;margin:0 0 5px;padding-left:207px;}
 .typeWrite .emailCell select, .typeWrite .emailCell .inpuTxt, .typeWrite .phoneCell select, .typeWrite .phoneCell .inpuTxt, .typeWrite .juminCell .inpuTxt,
@@ -267,6 +261,13 @@
 .typeWrite .innerCell .th {position:absolute;top:0;bottom:0;left:0;width:122px;padding:13px 0 0 20px;background:#fafafa;border-right:1px solid #e8e8e8;}
 .typeWrite .innerCell .fileCell {padding:7px 109px 7px 154px;}
 .typeWrite .innerCell .fileCell .btnDel {position:absolute;top:0;right:0;bottom:0;padding-top:7px;width:100px;border-left:1px solid #e8e8e8;text-align:center;box-sizing:border-box;}
+
+.typeWrite textarea {width:100%;height:180px;}
+.typeWrite .sizeMax {width:100%;}
+.typeWrite .sizeMaxHarf {width:70%;}
+.typeWrite .sizeHarf {width:40%;}
+.typeWrite .sizeSmall {width:20%;}
+.typeWrite .inputFile {width:60%;}
 
 /* bbs */
 .bbsSearch {text-align:right;}
@@ -300,6 +301,9 @@
 .bbsList li a > span.writer:before {content:"작성자";}
 .bbsList li a > span.date:before {content:"작성일";}
 .bbsList li a > span.view:before {content:"조회";}
+.bbsList li a > span.type:before {content:"문제유형";}
+.bbsList li a > span.testNum:before {content:"문제번호";}
+.bbsList li a > span.date2:before {content:"이의신청일";}
 .bbsList li a > span.sort,
 .bbsList li a > span.date,
 .bbsList li a > span.view {color:#999;}
