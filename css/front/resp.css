@@ -231,7 +231,7 @@
 
     /* txt */
     .tipTxt {margin-top:1.2rem;font-size:1.1rem;}
-    .tipTxt2 {margin:10px 0 0;padding:0 0 0 18px;background:url(../../images/front/icon_mark.gif) no-repeat 0 50%;color:#999;font-size:13px;}
+    .tipTxt2 {margin:1rem 0 0;padding:0 0 0 1.8rem;background:url(../../images/front/mobile/icon_mark.gif) no-repeat 0 50%;background-size:1.1rem;font-size:1.3rem;}
     .txtCenter {margin-top:1rem;text-align:center;}
     [class*="iconTxt"] {padding:13.5rem 0 0;font-size:1.5rem;}
     [class*="iconTxt"] [class*="btnType"] {margin:1.5rem 0 0;}
@@ -249,7 +249,7 @@
     .infoTable {margin:1rem 0 0;}
     .infoTable th,
     .infoTable td {padding:1rem;font-size:1.2rem;}
-    .infoTable tbody th {padding:1rem 1.5rem;}
+    .infoTable tbody th {padding:1.1rem 1.5rem .8rem;}
     .infoTable colgroup {display:none;}
     .typeWrite th {padding:0 1.5rem;}
     .typeWrite td {padding:.5rem .9rem;}
