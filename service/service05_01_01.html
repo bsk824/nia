@@ -109,7 +109,8 @@
                         <col style="width:145px;">
                         <col>
                     </colgroup>
-                    <tbody>
+                    <!-- pc -->
+                    <tbody class="moHide">
                         <tr>
                             <th scope="row">회차</th>
                             <td>19</td>
@@ -123,6 +124,27 @@
                             <td>86.07.19</td>
                         </tr>
                     </tbody>
+                    <!-- //pc -->
+                    <!-- mo -->
+                    <tbody class="moCont">
+                        <tr>
+                            <th scope="row" style="width:6rem;">회차</th>
+                            <td>19</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">수험번호</th>
+                            <td>20189625</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">성명</th>
+                            <td>정주헌</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">생년월일</th>
+                            <td>86.07.19</td>
+                        </tr>
+                    </tbody>
+                    <!-- //mo -->
                 </table>
             </div>
             
@@ -136,7 +158,20 @@
                 </div>
             </div>
 
-            <div class="infoTable contMg2">
+            <!-- 자격 증빙서류 제출 pc만 레이어 -->
+            <div class="layerPop onlyPcPop">
+                <div class="layerPopInner">
+                    <p>자격증빙서류 제출은<br>PC화면에서만 작성 가능합니다.</p>
+                    <div class="btnWrap">
+                        <span>
+                            <a href="#" class="btnType1">닫기</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <!-- //자격 증빙서류 제출 pc만 레이어 -->
+
+            <div class="infoTable pointTable">
                 <table>
                     <caption>점수 정보 테이블</caption>
                     <colgroup>
@@ -151,8 +186,8 @@
                     <thead>
                         <tr>
                             <th scope="col" colspan="5">과목별 점수</th>
-                            <th scope="col" rowspan="2">점수</th>
-                            <th scope="col" rowspan="2">합격여부</th>
+                            <th scope="col" rowspan="2" class="moHide">점수</th>
+                            <th scope="col" rowspan="2" class="moHide">합격여부</th>
                         </tr>
                         <tr>
                             <th scope="col">감리 및 사업관리</th>
@@ -169,8 +204,16 @@
                             <td>25</td>
                             <td>25</td>
                             <td>25</td>
-                            <td>120</td>
-                            <td><b class="fontColor4">합격</b></td>
+                            <td class="moHide">120</td>
+                            <td class="moHide"><b class="fontColor4">합격</b></td>
+                        </tr>
+                        <tr class="moCont">
+                            <th scope="row" colspan="2" class="center">점수</th>
+                            <th scope="row" colspan="3" class="center">합격여부</th>
+                        </tr>
+                        <tr class="moCont center">
+                            <td colspan="2">120</td>
+                            <td colspan="3"><b class="fontColor4">합격</b></td>
                         </tr>
                     </tbody>
                 </table>

@@ -97,7 +97,7 @@
     </div>
 	<section id="contents" tabindex="0">
 		<h1 class="pageTitle">가답안</h1>
-		<p class="pageDesc">이의신청 시 문제유형과 문제번호를 꼭 확인해 주세요. 그리고 사진 등의 파일은 파일첨부를 통해 등록해 주세요</p>
+		<p class="pageDesc">이의신청 시 문제유형과 문제번호를 꼭 확인해 주세요. 그리고 사진 등의 파일은 파일첨부를 통해 등록해 주세요</p>
 		
 		<div class="subSection">
 			<div class="infoTable typeWrite">
@@ -116,7 +116,8 @@
 								<input type="text" class="inpuTxt sizeMax" title="제목 입력">
 							</td>
 						</tr>
-						<tr>
+						<!-- pc -->
+						<tr class="moHide">
 							<th scope="row">문제유형</th>
 							<td>
 								<select class="sizeMax" title="문제유형 선택">
@@ -130,6 +131,25 @@
 								</select>
 							</td>
 						</tr>
+						<!-- //pc -->
+						<!-- mo -->
+						<tr class="moCont">
+							<th scope="row">문제유형</th>
+							<td>
+								<select class="sizeMax" title="문제유형 선택">
+									<option value="">필기시험 A형</option>
+								</select>
+							</td>
+						</tr>
+						<tr class="moCont">
+							<th scope="row">문제번호</th>
+							<td>
+								<select class="sizeHarf" title="문제번호 선택">
+									<option value="">55</option>
+								</select>
+							</td>
+						</tr>
+						<!-- //mo -->
 						<tr>
 							<th scope="row">내용</th>
 							<td colspan="3">

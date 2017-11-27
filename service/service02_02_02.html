@@ -131,18 +131,38 @@
                     <col>
                 </colgroup>
                 <tbody>
-                    <tr>
+                    <!-- pc -->
+                    <tr class="moHide">
                         <th scope="row">성명</th>
                         <td>정주헌</td>
                         <th scope="row">생년월일</th>
                         <td>86.07.19</td>
                     </tr>
+                    <!-- //pc -->
+                    <!-- mo -->
+                    <tr class="moCont">
+                        <th scope="row" style="width:6rem;">성명</th>
+                        <td colspan="3">정주헌</td>
+                    </tr>
+                    <tr class="moCont">
+                        <th scope="row">생년월일</th>
+                        <td colspan="3">86.07.19</td>
+                    </tr>
+                    <!-- //mo -->
                     <tr>
                         <th scope="row">환불사유</th>
                         <td colspan="3"><input type="text" class="inpuTxt sizeMax" title="환불사유 입력"></td>
                     </tr>
-                    <tr>
+                    <tr class="moHide">
                         <th scope="row" rowspan="2">환불 계좌번호</th>
+                        <th scope="col" class="center">은행명</th>
+                        <th scope="col" class="center">계좌번호</th>
+                        <th scope="col" class="center">예금주</th>
+                    </tr>
+                    <tr class="moCont">
+                        <th scope="row" colspan="3" class="center">환불 계좌번호</th>
+                    </tr>
+                    <tr class="moCont">
                         <th scope="col" class="center">은행명</th>
                         <th scope="col" class="center">계좌번호</th>
                         <th scope="col" class="center">예금주</th>

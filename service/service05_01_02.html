@@ -109,7 +109,8 @@
                         <col style="width:145px;">
                         <col>
                     </colgroup>
-                    <tbody>
+                    <!-- pc -->
+                    <tbody class="moHide">
                         <tr>
                             <th scope="row">회차</th>
                             <td>19</td>
@@ -123,6 +124,27 @@
                             <td>86.07.19</td>
                         </tr>
                     </tbody>
+                    <!-- //pc -->
+                    <!-- mo -->
+                    <tbody class="moCont">
+                        <tr>
+                            <th scope="row" style="width:6rem;">회차</th>
+                            <td>19</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">수험번호</th>
+                            <td>20189625</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">성명</th>
+                            <td>정주헌</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">생년월일</th>
+                            <td>86.07.19</td>
+                        </tr>
+                    </tbody>
+                    <!-- //mo -->
                 </table>
             </div>
             
@@ -133,45 +155,53 @@
                 </p>
             </div>
 
-            <div class="infoTable contMg2">
-                <table>
-                    <caption>점수 정보 테이블</caption>
-                    <colgroup>
-                        <col style="width:104px">
-                        <col style="width:104px">
-                        <col style="width:104px">
-                        <col style="width:104px">
-                        <col style="width:104px">
-                        <col>
-                        <col>
-                    </colgroup>
-                    <thead>
-                        <tr>
-                            <th scope="col" colspan="5">과목별 점수</th>
-                            <th scope="col" rowspan="2">점수</th>
-                            <th scope="col" rowspan="2">합격여부</th>
-                        </tr>
-                        <tr>
-                            <th scope="col">감리 및 사업관리</th>
-                            <th scope="col">소프트웨어 공학</th>
-                            <th scope="col">데이터베이스</th>
-                            <th scope="col">시스템구조</th>
-                            <th scope="col">보안</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr class="center">
-                            <td>25</td>
-                            <td>25</td>
-                            <td>25</td>
-                            <td>25</td>
-                            <td>25</td>
-                            <td>120</td>
-                            <td><b class="fontColor5">불합격</b></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+            <div class="infoTable pointTable">
+                    <table>
+                        <caption>점수 정보 테이블</caption>
+                        <colgroup>
+                            <col style="width:104px">
+                            <col style="width:104px">
+                            <col style="width:104px">
+                            <col style="width:104px">
+                            <col style="width:104px">
+                            <col>
+                            <col>
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th scope="col" colspan="5">과목별 점수</th>
+                                <th scope="col" rowspan="2" class="moHide">점수</th>
+                                <th scope="col" rowspan="2" class="moHide">합격여부</th>
+                            </tr>
+                            <tr>
+                                <th scope="col">감리 및 사업관리</th>
+                                <th scope="col">소프트웨어 공학</th>
+                                <th scope="col">데이터베이스</th>
+                                <th scope="col">시스템구조</th>
+                                <th scope="col">보안</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="center">
+                                <td>25</td>
+                                <td>25</td>
+                                <td>25</td>
+                                <td>25</td>
+                                <td>25</td>
+                                <td class="moHide">120</td>
+                                <td class="moHide"><b class="fontColor5">불합격</b></td>
+                            </tr>
+                            <tr class="moCont">
+                                <th scope="row" colspan="2" class="center">점수</th>
+                                <th scope="row" colspan="3" class="center">합격여부</th>
+                            </tr>
+                            <tr class="moCont center">
+                                <td colspan="2">120</td>
+                                <td colspan="3"><b class="fontColor5">불합격</b></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
         </div>
         
 	</section>

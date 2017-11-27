@@ -100,32 +100,38 @@
         <div class="subSection receiveSection">
             <div class="receivePicture">
                 <span class="picture"><img src="../images/front/img_picture_sample2.jpg" alt="사진 샘플"></span>
-                <button type="button" class="btnType1">사진등록</button>
+                <div class="moCont">
+                    <p>제 19회</p>
+                    <p class="name">정주헌</p>
+                    <p><span>수험번호</span> : 20179625</p>
+                    <p><span>생년월일</span> : 86.07.19</p>
+                </div>
             </div>
             <div class="infoTable typeWrite">
                 <table>
-                    <caption>응시원서 입력 테이블</caption>
+                    <caption>응시원서 입력된 정보 테이블</caption>
                     <colgroup>
                         <col style="width:145px;">
                         <col>
                     </colgroup>
                     <tbody>
-                        <tr>
+                        <tr class="moHide">
                             <th scope="row">회차</th>
                             <td>19</td>
                         </tr>
-                        <tr>
+                        <tr class="moHide">
                             <th scope="row">성명</th>
                             <td>정주헌</td>
                         </tr>
-                        <tr>
+                        <tr class="moHide">
                             <th scope="row">수험번호</th>
-                            <td></td>
+                            <td>20179625</td>
                         </tr>
-                        <tr>
+                        <tr class="moHide">
                             <th scope="row">생년월일</th>
                             <td>86.07.19</td>
                         </tr>
+                        <tr>
                         <tr>
                             <th scope="row">소속</th>
                             <td>상상스토리 </td>
@@ -140,7 +146,7 @@
         </div>
         <div class="infoTable typeWrite">
             <table>
-                <caption>응시원서 연락처 입력 테이블</caption>
+                <caption>응시원서 입력된 정보 테이블</caption>
                 <colgroup>
                     <col style="width:145px;">
                     <col>
@@ -160,7 +166,7 @@
                     </tr>
                     <tr>
                         <th scope="row">E-mail</th>
-                        <td> class="email"</td>
+                        <td>turtle00000@naver.co.kr </td>
                     </tr>
                 </tbody>
             </table>
@@ -176,12 +182,25 @@
                     <col>
                 </colgroup>
                 <tbody>
-                    <tr>
+                    <!-- pc -->
+                    <tr class="moHide">
                         <th scope="row">상태</th>
                         <td><b class="fontColor1">접수 완료</b></td>
                         <th scope="row">접수일</th>
                         <td>2018-05-25</td>
                     </tr>
+                    <!-- //pc -->
+
+                    <!-- mo -->
+                    <tr class="moCont">
+                        <th scope="row" style="width:5rem;">상태</th>
+                        <td><b class="fontColor1">접수 완료</b></td>
+                    </tr>
+                    <tr class="moCont">
+                        <th scope="row">접수일</th>
+                        <td>2018-05-25</td>
+                    </tr>
+                    <!-- //mo -->
                 </tbody>
             </table>
         </div>
@@ -201,12 +220,26 @@
                     <col>
                 </colgroup>
                 <tbody>
-                    <tr>
+                   <!-- pc -->
+                   <tr class="moHide">
                         <th scope="row">상태</th>
-                        <td><b class="fontColor1">접수 처리 대기 중</b></td>
+                        <td><b class="fontColor1">접수 처리 대기중</b></td>
                         <th scope="row">접수일</th>
                         <td>2018-05-25</td>
                     </tr>
+                    <!-- //pc -->
+
+                    <!-- mo -->
+                    <tr class="moCont">
+                        <th scope="row" style="width:5rem;">상태</th>
+                        <td><b class="fontColor1">접수 처리 대기중</b></td>
+                    </tr>
+                    <tr class="moCont">
+                        <th scope="row">접수일</th>
+                        <td>2018-05-25</td>
+                    </tr>
+                    <!-- //mo -->
+
                     <tr>
                         <th scope="row" rowspan="2">단계확인</th>
                         <td colspan="3">응시원서 접수 단계</td>
