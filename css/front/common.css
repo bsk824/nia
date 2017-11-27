@@ -348,6 +348,7 @@
 
 .bbsPassLayer .bbsPassTit {display:block;padding:30px 0 15px;color:#222;font-size:18px;line-height:1;}
 .bbsPassLayer .inpuTxt {width:180px;text-align:center;}
+.onlyPcPop .layerPopInner p {padding:30px 0 20px;}
 
 /* btn */
 .btnWrap {margin:30px 0 0;text-align:center;}

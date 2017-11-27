@@ -22,6 +22,13 @@ function active(_this,className) {
 	var $this = _this;
 	$this.parent().addClass(className).siblings().removeClass(className);
 }
+function layerOpen(obj,btn) {
+	var layer = $('.'+obj);
+	layer.show().focus();
+}
+function layerClose(obj) {
+	$('.layerPop').hide();
+}
 function fontSize(w) {
 	if (w <= 560) {
 		var fontSize = w / 5.12;

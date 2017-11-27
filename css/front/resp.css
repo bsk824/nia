@@ -358,8 +358,10 @@
     .layerPop:before {content:"";position:fixed;top:0;right:0;bottom:0;left:0;background:#000;opacity:.6;}
     .layerPop .layerPopInner {position:fixed;width:21rem;height:auto;margin:0;padding:3rem 2rem;transform:translate(-50%, -50%);z-index:2;}
     .layerPop .btnWrap {margin-top:1rem;}
+
     .bbsPassLayer .bbsPassTit {padding:0 0 1.5rem;font-size:1.8rem;}
     .bbsPassLayer .inpuTxt {width:18rem;}
+    .onlyPcPop .layerPopInner p {padding:3rem 0 2rem;}
 
     /* margin */
     .contMg {margin-top:1rem;}
