@@ -249,7 +249,7 @@
     .infoTable {margin:1rem 0 0;}
     .infoTable th,
     .infoTable td {padding:1rem;font-size:1.2rem;}
-    .infoTable tbody th {padding:1.1rem 1.5rem .8rem;}
+    .infoTable tbody th {width:7rem;padding:1.1rem 1rem .8rem;}
     .infoTable colgroup {display:none;}
     .typeWrite th {padding:0 1.5rem;}
     .typeWrite td {padding:.5rem .9rem;}
@@ -257,7 +257,7 @@
     .typeWrite .tip {display:block;margin:.5rem 0 0;padding:0 0 0 1.5rem;background:url(../../images/front/mobile/icon_mark.gif) no-repeat 0 .3rem;background-size:1.1rem;font-size:1.1rem;}
     .typeWrite .addressCell {margin:0 0 .5rem;padding:3.5rem 0 0;}
     .typeWrite .addressCell .addressBtn {top:0;right:0;left:auto;}
-    .typeWrite .addressCell .address1 {top:0;left:0;width:10.7rem;}
+    .typeWrite .addressCell .address1 {top:0;left:0;width:10rem;}
 
     .typeWrite .phoneCell,
     .typeWrite .juminCell {display:table;width:100%;}    
@@ -405,8 +405,6 @@
     .receivePicture .picture img {width:100%;height:100%;}
     .receiveSection .infoTable {border-top:1px solid #484f62;}
     .receiveSection + .infoTable {margin-top:-1px;border-top:1px solid #e3e3e3;}
-    .receiveSection .infoTable th,
-    .receiveSection + .infoTable th {width:5rem;}
 
     .inputWrap {width:100%;margin:3rem auto 0;}
     .inputWrap p + p {margin-top:.5rem;}
