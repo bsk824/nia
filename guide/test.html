@@ -18,11 +18,15 @@
 </head>
 
 <body>
-    rrrrrrrrrrrrrrrrrrrrrrrrrr
-    <input type="text">
+    <label for="aa">
+        rrrrrrrrrrrrrrrrrrrrrrrrrr
+    </label>
+    <input type="text" id="aa">
     <script>
         $(function(){
-            $('input').focus().trigger('touchstart');
+            setTimeout(function(){
+                $('label').trigger('click');
+            },1000);
         });
     </script>
 </body>
