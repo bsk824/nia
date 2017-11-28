@@ -227,8 +227,8 @@
 		</div>
 		<div class="subSection">
 			<h2 class="subTitle">레이어 팝업</h2>
-			<button type="button" class="btnType1" onclick="layerOpen('bbsPassLayer');">비밀번호입력 레이어</button>
-			<button type="button" class="btnType3" onclick="layerOpen('onlyPcPop');">pc에서만 작성가능 레이어</button>
+			<button type="button" class="btnType1" onclick="layerOpen('bbsPassLayer',this);">비밀번호입력 레이어</button>
+			<button type="button" class="btnType3" onclick="layerOpen('onlyPcPop',this);">pc에서만 작성가능 레이어</button>
 			<!-- 비밀번호 입력 레이어 -->
 			<div class="layerPop bbsPassLayer" tabindex="0">
 				<div class="layerPopInner">
@@ -237,7 +237,7 @@
 					<div class="btnWrap">
 						<span>
 							<button class="btnType2">입력</button>
-							<button type="button" class="btnType1" onclick="layerClose();">취소</button>
+							<button type="button" class="btnType1" onclick="layerClose();" onfocusout="layerBack(this);">취소</button>
 						</span>
 					</div>
 				</div>
@@ -249,7 +249,7 @@
 					<p>자격증빙서류 제출은<br>PC화면에서만 작성 가능합니다.</p>
 					<div class="btnWrap">
 						<span>
-							<button type="button" class="btnType1" onclick="layerClose();">닫기</button>
+							<button type="button" class="btnType1" onclick="layerClose();" onfocusout="layerBack(this);">닫기</button>
 						</span>
 					</div>
 				</div>

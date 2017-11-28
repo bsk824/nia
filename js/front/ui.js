@@ -22,12 +22,19 @@ function active(_this,className) {
 	var $this = _this;
 	$this.parent().addClass(className).siblings().removeClass(className);
 }
+var layerBtn = "";
 function layerOpen(obj,btn) {
 	var layer = $('.'+obj);
+	layerBtn = $(btn);
 	layer.show().focus();
 }
 function layerClose(obj) {
 	$('.layerPop').hide();
+	layerBtn.focus();
+}
+function layerBack(obj) {
+	var $this = $(obj);
+	$this.closest('.layerPop').focus();
 }
 function fontSize(w) {
 	if (w <= 560) {
