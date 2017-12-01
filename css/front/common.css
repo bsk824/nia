@@ -48,8 +48,8 @@
 .subPageTopInner {position:relative;width:440px;height:118px;margin:0 auto;text-align:center;}
 .subPageTopInner:before {content:"";position:absolute;top:0;right:0;bottom:0;left:0;border:1px solid #000;opacity:.2;}
 .subPageTopInner:after {content:"";position:absolute;top:-11px;left:30px;width:13px;height:37px;background:#fdc000;}
-.subPageTopInner p {padding:25px 0 20px;font-size:10px;letter-spacing:4px;color:#999;line-height:1;}
-.subPageTopInner h2 {color:#111;font-size:36px;line-height:1;}
+.subPageTopInner p {padding:25px 0 15px;font-size:10px;letter-spacing:4px;color:#999;line-height:1;}
+.subPageTopInner h2 {color:#111;font-size:40px;line-height:1;}
 .subPageTopInner h2:before {content:"";position:absolute;top:14px;left:19px;border:12px solid transparent;border-right:12px solid #fdc000;}
 .subCate1 {background:url(../../images/front/img_sub_visual01.jpg) no-repeat 50% 50%;background-size:cover;}
 .subCate2 {background:url(../../images/front/img_sub_visual02.jpg) no-repeat 50% 50%;background-size:cover;}
@@ -68,7 +68,7 @@
 #container:after {content:"";display:block;clear:both;}
 
 #snb {float:left;width:220px;outline:0 none;}
-#snb .cateTitle {margin:0 0 14px;padding:60px 0 17px;font-size:24px;font-weight:bold;color:#222;line-height:1;border-bottom:3px solid #bf91f3;}
+#snb .cateTitle {margin:0 0 14px;padding:40px 0 17px;font-size:28px;font-weight:bold;color:#222;line-height:1;border-bottom:3px solid #bf91f3;}
 #snb .snbNav > ul > li {border-bottom:1px solid #e0e0e0;}
 #snb .snbNav > ul > li > a {display:block;padding:14px 0 14px 20px;line-height:1;color:#626262;}
 #snb .snbNav > ul > li.active > a {background:url(../../images/front/img_snb_active_arrow.gif) no-repeat 90% 50%;color:#333;font-weight:bold;}
@@ -80,7 +80,7 @@
 #snb .snbNav > ul > li.open ul {display:block;}
 #snb .snbNav > ul > li.open button:after {background-position:0 100%;}
 
-#contents {float:right;width:730px;padding:60px 0 0;outline:0 none;}
+#contents {float:right;width:730px;padding:40px 0 0;outline:0 none;}
 
 .nonSnb #contents {float:none;width:100%;}
 
