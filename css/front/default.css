@@ -21,7 +21,7 @@
 }
 * {margin:0;padding:0;}
 html {font-size:62.5%;}
-body {min-width:1000px\9;color:#666;font:14px/1.5 notoR, sans-serif;-webkit-text-size-adjust:none;word-break:keep-all;letter-spacing:-1px;}
+body {min-width:1000px;color:#666;font:14px/1.5 notoR, sans-serif;-webkit-text-size-adjust:none;word-break:keep-all;letter-spacing:-1px;}
 h1, h2, h3, h4, h5 {font-weight:normal;}
 a {color:#666;text-decoration:none;}
 li {list-style:none;}
@@ -52,15 +52,9 @@ textarea {padding:10px;resize:none;border:1px solid #e1e1e1;border-radius:0;box-
 
 .chk {display:inline-block;cursor:pointer;vertical-align:middle;}
 .chk + .chk {margin:0 0 0 10px;}
-.chk input {position:absolute;visibility:hidden;position:static\9;visibility:visible\9;}
-.chk input + span:before {content:"";display:inline-block;display:none\9;width:22px;height:22px;margin:0 10px 0 0;vertical-align:middle;background:url('../../images/front/icon_pack.png') no-repeat 0 -26px;}
-.chk input:checked + span:before {background-position:0 -48px;}
 
-.radio {display:inline-block;position:relative;padding-left:20px;cursor:pointer;vertical-align:middle;}
+.radio {display:inline-block;position:relative;cursor:pointer;vertical-align:middle;}
 .radio + .radio {margin:0 0 0 10px;}
-.radio input {position:absolute;visibility:hidden;position:static\9;visibility:visible\9;}
-.radio input + span:before {content:"";display:inline-block;display:none\9;position:absolute;top:4px;left:0;width:12px;height:12px;margin:0 4px 0 0;border:1px solid #bababa;border-radius:50%;}
-.radio input:checked + span:after {content:"";position:absolute;top:8px;left:4px;width:6px;height:6px;background:#bf91f3;border-radius:50%;}
 
 .ui-datepicker {width:240px;display:none;background:#fff;border:1px solid #ccc;z-index:10;}
 .ui-datepicker .ui-datepicker-header {position:relative;padding:5px 0;text-align:center;}
@@ -73,6 +67,19 @@ textarea {padding:10px;resize:none;border:1px solid #e1e1e1;border-radius:0;box-
 .ui-datepicker td span,
 .ui-datepicker td a {display:block;padding:5px;text-align:center;}
 .ui-datepicker-trigger {width:19px;height:19px;margin:0 0 0 5px;background:url(../../images/front/btn_cal.gif) no-repeat;font:0/0 a!important;}
+
+@media all and (min-width:0) {
+	body {min-width:0;}
+
+	.chk input {position:absolute;visibility:hidden;}
+	.chk input + span:before {content:"";display:inline-block;width:22px;height:22px;margin:0 10px 0 0;vertical-align:middle;background:url('../../images/front/icon_pack.png') no-repeat 0 -26px;}
+	.chk input:checked + span:before {background-position:0 -48px;}
+	
+	.radio {padding-left:20px;}
+	.radio input {position:absolute;visibility:hidden;}
+	.radio input + span:before {content:"";display:inline-block;position:absolute;top:4px;left:0;width:12px;height:12px;margin:0 4px 0 0;border:1px solid #bababa;border-radius:50%;}
+	.radio input:checked + span:after {content:"";position:absolute;top:8px;left:4px;width:6px;height:6px;background:#bf91f3;border-radius:50%;}
+}
 
 @media all and (max-width:999px) {
 	html {font-size:62.5%;}
