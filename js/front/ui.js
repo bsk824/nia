@@ -85,6 +85,13 @@ $(function(){
 	gnbMenu.on('mouseenter focus',function(){
 		gnb.addClass('menuOn');
 	});
+	gnbMenu.on('click',function(){
+		if (winW < 768) {
+			var $this = $(this);
+			active($this,'active');
+			return false;
+		}
+	});
 	btnAllMenu.on('click',function(){
 		gnb.addClass('menuOn');
 	});
