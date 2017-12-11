@@ -85,7 +85,7 @@ textarea {padding:10px;resize:none;border:1px solid #e1e1e1;border-radius:0;box-
 	html {font-size:62.5%;}
 	body, input, select, textarea, button {font-size:1.4rem;}
 	select {height:3rem;padding:0 2rem 0 1rem;background:url(../../images/front/mobile/bg_select.gif) no-repeat right .5rem top 50%;background-size:.9rem;-webkit-appearance:none;-moz-appearance:none;box-sizing:border-box;vertical-align:0;}
-	textarea, input.inpuTxt {height:3rem;padding:.6rem .5rem 0;border-width:.1rem;border-radius:0;box-sizing:border-box;-webkit-appearance:none;-moz-appearance:none;}
+	textarea, input.inpuTxt {height:3rem;padding:.4rem .5rem 0;border-width:.1rem;border-radius:0;box-sizing:border-box;-webkit-appearance:none;-moz-appearance:none;}
 
 	.chk + .chk {margin:0 0 0 1rem;}
 	.chk input + span:before {width:2.2rem;height:2.2rem;margin:0 1rem 0 0;background-position:0 -2.6rem;background-size:50rem;}
