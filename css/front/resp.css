@@ -180,10 +180,14 @@
 
     .subPageTop {height:8.5rem;padding:1.5rem 0 0;box-sizing:border-box;}
     .subPageTopInner {width:26.5rem;height:6rem;}
-    .subPageTopInner:after {content:"";position:absolute;top:-.5rem;left:1.5rem;width:.6rem;height:1.8rem;background:#fdc000;}
+    
+    /* 180128 수정 */
+    /* .subPageTopInner:after {content:"";position:absolute;top:-.5rem;left:1.5rem;width:.6rem;height:1.8rem;background:#fdc000;} */
     .subPageTopInner p {padding:1rem 0 .5rem;font-size:1rem;letter-spacing:.2rem;}
     .subPageTopInner h2 {font-size:2.3rem;}
-    .subPageTopInner h2:before {content:"";position:absolute;top:.7rem;left:.9rem;border:.6rem solid transparent;border-right:.6rem solid #fdc000;}
+    .subPageTopInner h2:after,
+    .subPageTopInner h2:before {width:.8rem;height:2.8rem;}
+    /* //180128 수정 */
 
     .mainTop {height:24rem;margin:0 -1.5rem;padding:0;background-size:cover;text-align:center;}
     .mainTop h1 {padding:4.5rem 0 0;}
